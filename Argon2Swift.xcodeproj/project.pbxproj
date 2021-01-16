@@ -8,17 +8,321 @@
 
 /* Begin PBXBuildFile section */
 		A460116425B2867A004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A460118825B286F0004F9B26 /* Argon2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2.swift */; };
-		A460118925B286F0004F9B26 /* Argon2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2.swift */; };
-		A460118A25B286F0004F9B26 /* Argon2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2.swift */; };
-		A460118B25B286F0004F9B26 /* Argon2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2.swift */; };
+		A460118825B286F0004F9B26 /* Argon2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2Swift.swift */; };
+		A460118925B286F0004F9B26 /* Argon2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2Swift.swift */; };
+		A460118A25B286F0004F9B26 /* Argon2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2Swift.swift */; };
+		A460118B25B286F0004F9B26 /* Argon2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2Swift.swift */; };
 		A460119825B2895B004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46011A125B2896B004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46011AE25B28972004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A46011BD25B28A9E004F9B26 /* Argon2 in Resources */ = {isa = PBXBuildFile; fileRef = A46011BC25B28A9E004F9B26 /* Argon2 */; };
-		A46011BE25B28A9E004F9B26 /* Argon2 in Resources */ = {isa = PBXBuildFile; fileRef = A46011BC25B28A9E004F9B26 /* Argon2 */; };
-		A46011BF25B28A9E004F9B26 /* Argon2 in Resources */ = {isa = PBXBuildFile; fileRef = A46011BC25B28A9E004F9B26 /* Argon2 */; };
-		A46011C025B28A9E004F9B26 /* Argon2 in Resources */ = {isa = PBXBuildFile; fileRef = A46011BC25B28A9E004F9B26 /* Argon2 */; };
+		A46014F025B29609004F9B26 /* argon2.1 in Resources */ = {isa = PBXBuildFile; fileRef = A460148E25B29608004F9B26 /* argon2.1 */; };
+		A46014F125B29609004F9B26 /* argon2.1 in Resources */ = {isa = PBXBuildFile; fileRef = A460148E25B29608004F9B26 /* argon2.1 */; };
+		A46014F225B29609004F9B26 /* argon2.1 in Resources */ = {isa = PBXBuildFile; fileRef = A460148E25B29608004F9B26 /* argon2.1 */; };
+		A46014F325B29609004F9B26 /* argon2.1 in Resources */ = {isa = PBXBuildFile; fileRef = A460148E25B29608004F9B26 /* argon2.1 */; };
+		A46014F425B29609004F9B26 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A460148F25B29608004F9B26 /* LICENSE */; };
+		A46014F525B29609004F9B26 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A460148F25B29608004F9B26 /* LICENSE */; };
+		A46014F625B29609004F9B26 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A460148F25B29608004F9B26 /* LICENSE */; };
+		A46014F725B29609004F9B26 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = A460148F25B29608004F9B26 /* LICENSE */; };
+		A46014F825B29609004F9B26 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = A460149025B29608004F9B26 /* CHANGELOG.md */; };
+		A46014F925B29609004F9B26 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = A460149025B29608004F9B26 /* CHANGELOG.md */; };
+		A46014FA25B29609004F9B26 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = A460149025B29608004F9B26 /* CHANGELOG.md */; };
+		A46014FB25B29609004F9B26 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = A460149025B29608004F9B26 /* CHANGELOG.md */; };
+		A46014FC25B29609004F9B26 /* argon2-specs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149125B29608004F9B26 /* argon2-specs.pdf */; };
+		A46014FD25B29609004F9B26 /* argon2-specs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149125B29608004F9B26 /* argon2-specs.pdf */; };
+		A46014FE25B29609004F9B26 /* argon2-specs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149125B29608004F9B26 /* argon2-specs.pdf */; };
+		A46014FF25B29609004F9B26 /* argon2-specs.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149125B29608004F9B26 /* argon2-specs.pdf */; };
+		A460150025B29609004F9B26 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = A460149225B29608004F9B26 /* Makefile */; };
+		A460150125B29609004F9B26 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = A460149225B29608004F9B26 /* Makefile */; };
+		A460150225B29609004F9B26 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = A460149225B29608004F9B26 /* Makefile */; };
+		A460150325B29609004F9B26 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = A460149225B29608004F9B26 /* Makefile */; };
+		A460150425B29609004F9B26 /* argon2-specs.tex in Resources */ = {isa = PBXBuildFile; fileRef = A460149425B29609004F9B26 /* argon2-specs.tex */; };
+		A460150525B29609004F9B26 /* argon2-specs.tex in Resources */ = {isa = PBXBuildFile; fileRef = A460149425B29609004F9B26 /* argon2-specs.tex */; };
+		A460150625B29609004F9B26 /* argon2-specs.tex in Resources */ = {isa = PBXBuildFile; fileRef = A460149425B29609004F9B26 /* argon2-specs.tex */; };
+		A460150725B29609004F9B26 /* argon2-specs.tex in Resources */ = {isa = PBXBuildFile; fileRef = A460149425B29609004F9B26 /* argon2-specs.tex */; };
+		A460150825B29609004F9B26 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = A460149525B29609004F9B26 /* Makefile */; };
+		A460150925B29609004F9B26 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = A460149525B29609004F9B26 /* Makefile */; };
+		A460150A25B29609004F9B26 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = A460149525B29609004F9B26 /* Makefile */; };
+		A460150B25B29609004F9B26 /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = A460149525B29609004F9B26 /* Makefile */; };
+		A460150C25B29609004F9B26 /* argon2-par.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149725B29609004F9B26 /* argon2-par.pdf */; };
+		A460150D25B29609004F9B26 /* argon2-par.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149725B29609004F9B26 /* argon2-par.pdf */; };
+		A460150E25B29609004F9B26 /* argon2-par.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149725B29609004F9B26 /* argon2-par.pdf */; };
+		A460150F25B29609004F9B26 /* argon2-par.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149725B29609004F9B26 /* argon2-par.pdf */; };
+		A460151025B29609004F9B26 /* generic.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149825B29609004F9B26 /* generic.pdf */; };
+		A460151125B29609004F9B26 /* generic.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149825B29609004F9B26 /* generic.pdf */; };
+		A460151225B29609004F9B26 /* generic.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149825B29609004F9B26 /* generic.pdf */; };
+		A460151325B29609004F9B26 /* generic.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149825B29609004F9B26 /* generic.pdf */; };
+		A460151425B29609004F9B26 /* compression.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149925B29609004F9B26 /* compression.pdf */; };
+		A460151525B29609004F9B26 /* compression.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149925B29609004F9B26 /* compression.pdf */; };
+		A460151625B29609004F9B26 /* compression.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149925B29609004F9B26 /* compression.pdf */; };
+		A460151725B29609004F9B26 /* compression.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A460149925B29609004F9B26 /* compression.pdf */; };
+		A460151825B29609004F9B26 /* power-distribution.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A460149A25B29609004F9B26 /* power-distribution.jpg */; };
+		A460151925B29609004F9B26 /* power-distribution.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A460149A25B29609004F9B26 /* power-distribution.jpg */; };
+		A460151A25B29609004F9B26 /* power-distribution.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A460149A25B29609004F9B26 /* power-distribution.jpg */; };
+		A460151B25B29609004F9B26 /* power-distribution.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A460149A25B29609004F9B26 /* power-distribution.jpg */; };
+		A460151C25B29609004F9B26 /* IEEEtran.cls in Resources */ = {isa = PBXBuildFile; fileRef = A460149B25B29609004F9B26 /* IEEEtran.cls */; };
+		A460151D25B29609004F9B26 /* IEEEtran.cls in Resources */ = {isa = PBXBuildFile; fileRef = A460149B25B29609004F9B26 /* IEEEtran.cls */; };
+		A460151E25B29609004F9B26 /* IEEEtran.cls in Resources */ = {isa = PBXBuildFile; fileRef = A460149B25B29609004F9B26 /* IEEEtran.cls */; };
+		A460151F25B29609004F9B26 /* IEEEtran.cls in Resources */ = {isa = PBXBuildFile; fileRef = A460149B25B29609004F9B26 /* IEEEtran.cls */; };
+		A460152025B29609004F9B26 /* tradeoff.bib in Resources */ = {isa = PBXBuildFile; fileRef = A460149C25B29609004F9B26 /* tradeoff.bib */; };
+		A460152125B29609004F9B26 /* tradeoff.bib in Resources */ = {isa = PBXBuildFile; fileRef = A460149C25B29609004F9B26 /* tradeoff.bib */; };
+		A460152225B29609004F9B26 /* tradeoff.bib in Resources */ = {isa = PBXBuildFile; fileRef = A460149C25B29609004F9B26 /* tradeoff.bib */; };
+		A460152325B29609004F9B26 /* tradeoff.bib in Resources */ = {isa = PBXBuildFile; fileRef = A460149C25B29609004F9B26 /* tradeoff.bib */; };
+		A460152425B29609004F9B26 /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; };
+		A460152525B29609004F9B26 /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; };
+		A460152625B29609004F9B26 /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; };
+		A460152725B29609004F9B26 /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; };
+		A460152825B29609004F9B26 /* Argon2.sln in Resources */ = {isa = PBXBuildFile; fileRef = A460149F25B29609004F9B26 /* Argon2.sln */; };
+		A460152925B29609004F9B26 /* Argon2.sln in Resources */ = {isa = PBXBuildFile; fileRef = A460149F25B29609004F9B26 /* Argon2.sln */; };
+		A460152A25B29609004F9B26 /* Argon2.sln in Resources */ = {isa = PBXBuildFile; fileRef = A460149F25B29609004F9B26 /* Argon2.sln */; };
+		A460152B25B29609004F9B26 /* Argon2.sln in Resources */ = {isa = PBXBuildFile; fileRef = A460149F25B29609004F9B26 /* Argon2.sln */; };
+		A460152C25B29609004F9B26 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A46014A025B29609004F9B26 /* README.md */; };
+		A460152D25B29609004F9B26 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A46014A025B29609004F9B26 /* README.md */; };
+		A460152E25B29609004F9B26 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A46014A025B29609004F9B26 /* README.md */; };
+		A460152F25B29609004F9B26 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A46014A025B29609004F9B26 /* README.md */; };
+		A460153025B29609004F9B26 /* appveyor.yml in Resources */ = {isa = PBXBuildFile; fileRef = A46014A125B29609004F9B26 /* appveyor.yml */; };
+		A460153125B29609004F9B26 /* appveyor.yml in Resources */ = {isa = PBXBuildFile; fileRef = A46014A125B29609004F9B26 /* appveyor.yml */; };
+		A460153225B29609004F9B26 /* appveyor.yml in Resources */ = {isa = PBXBuildFile; fileRef = A46014A125B29609004F9B26 /* appveyor.yml */; };
+		A460153325B29609004F9B26 /* appveyor.yml in Resources */ = {isa = PBXBuildFile; fileRef = A46014A125B29609004F9B26 /* appveyor.yml */; };
+		A460153425B29609004F9B26 /* Argon2Ref.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014A425B29609004F9B26 /* Argon2Ref.vcxproj */; };
+		A460153525B29609004F9B26 /* Argon2Ref.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014A425B29609004F9B26 /* Argon2Ref.vcxproj */; };
+		A460153625B29609004F9B26 /* Argon2Ref.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014A425B29609004F9B26 /* Argon2Ref.vcxproj */; };
+		A460153725B29609004F9B26 /* Argon2Ref.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014A425B29609004F9B26 /* Argon2Ref.vcxproj */; };
+		A460153825B29609004F9B26 /* Argon2Ref.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014A525B29609004F9B26 /* Argon2Ref.vcxproj.filters */; };
+		A460153925B29609004F9B26 /* Argon2Ref.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014A525B29609004F9B26 /* Argon2Ref.vcxproj.filters */; };
+		A460153A25B29609004F9B26 /* Argon2Ref.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014A525B29609004F9B26 /* Argon2Ref.vcxproj.filters */; };
+		A460153B25B29609004F9B26 /* Argon2Ref.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014A525B29609004F9B26 /* Argon2Ref.vcxproj.filters */; };
+		A460153C25B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014A725B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters */; };
+		A460153D25B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014A725B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters */; };
+		A460153E25B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014A725B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters */; };
+		A460153F25B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014A725B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters */; };
+		A460154025B29609004F9B26 /* Argon2OptGenKAT.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014A825B29609004F9B26 /* Argon2OptGenKAT.vcxproj */; };
+		A460154125B29609004F9B26 /* Argon2OptGenKAT.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014A825B29609004F9B26 /* Argon2OptGenKAT.vcxproj */; };
+		A460154225B29609004F9B26 /* Argon2OptGenKAT.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014A825B29609004F9B26 /* Argon2OptGenKAT.vcxproj */; };
+		A460154325B29609004F9B26 /* Argon2OptGenKAT.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014A825B29609004F9B26 /* Argon2OptGenKAT.vcxproj */; };
+		A460154425B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014AA25B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters */; };
+		A460154525B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014AA25B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters */; };
+		A460154625B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014AA25B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters */; };
+		A460154725B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014AA25B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters */; };
+		A460154825B29609004F9B26 /* Argon2RefGenKAT.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014AB25B29609004F9B26 /* Argon2RefGenKAT.vcxproj */; };
+		A460154925B29609004F9B26 /* Argon2RefGenKAT.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014AB25B29609004F9B26 /* Argon2RefGenKAT.vcxproj */; };
+		A460154A25B29609004F9B26 /* Argon2RefGenKAT.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014AB25B29609004F9B26 /* Argon2RefGenKAT.vcxproj */; };
+		A460154B25B29609004F9B26 /* Argon2RefGenKAT.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014AB25B29609004F9B26 /* Argon2RefGenKAT.vcxproj */; };
+		A460154C25B29609004F9B26 /* Argon2RefDll.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014AD25B29609004F9B26 /* Argon2RefDll.vcxproj */; };
+		A460154D25B29609004F9B26 /* Argon2RefDll.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014AD25B29609004F9B26 /* Argon2RefDll.vcxproj */; };
+		A460154E25B29609004F9B26 /* Argon2RefDll.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014AD25B29609004F9B26 /* Argon2RefDll.vcxproj */; };
+		A460154F25B29609004F9B26 /* Argon2RefDll.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014AD25B29609004F9B26 /* Argon2RefDll.vcxproj */; };
+		A460155025B29609004F9B26 /* Argon2RefDll.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014AE25B29609004F9B26 /* Argon2RefDll.vcxproj.filters */; };
+		A460155125B29609004F9B26 /* Argon2RefDll.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014AE25B29609004F9B26 /* Argon2RefDll.vcxproj.filters */; };
+		A460155225B29609004F9B26 /* Argon2RefDll.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014AE25B29609004F9B26 /* Argon2RefDll.vcxproj.filters */; };
+		A460155325B29609004F9B26 /* Argon2RefDll.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014AE25B29609004F9B26 /* Argon2RefDll.vcxproj.filters */; };
+		A460155425B29609004F9B26 /* Argon2OptBench.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B025B29609004F9B26 /* Argon2OptBench.vcxproj.filters */; };
+		A460155525B29609004F9B26 /* Argon2OptBench.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B025B29609004F9B26 /* Argon2OptBench.vcxproj.filters */; };
+		A460155625B29609004F9B26 /* Argon2OptBench.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B025B29609004F9B26 /* Argon2OptBench.vcxproj.filters */; };
+		A460155725B29609004F9B26 /* Argon2OptBench.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B025B29609004F9B26 /* Argon2OptBench.vcxproj.filters */; };
+		A460155825B29609004F9B26 /* Argon2OptBench.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B125B29609004F9B26 /* Argon2OptBench.vcxproj */; };
+		A460155925B29609004F9B26 /* Argon2OptBench.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B125B29609004F9B26 /* Argon2OptBench.vcxproj */; };
+		A460155A25B29609004F9B26 /* Argon2OptBench.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B125B29609004F9B26 /* Argon2OptBench.vcxproj */; };
+		A460155B25B29609004F9B26 /* Argon2OptBench.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B125B29609004F9B26 /* Argon2OptBench.vcxproj */; };
+		A460155C25B29609004F9B26 /* Argon2Opt.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B325B29609004F9B26 /* Argon2Opt.vcxproj */; };
+		A460155D25B29609004F9B26 /* Argon2Opt.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B325B29609004F9B26 /* Argon2Opt.vcxproj */; };
+		A460155E25B29609004F9B26 /* Argon2Opt.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B325B29609004F9B26 /* Argon2Opt.vcxproj */; };
+		A460155F25B29609004F9B26 /* Argon2Opt.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B325B29609004F9B26 /* Argon2Opt.vcxproj */; };
+		A460156025B29609004F9B26 /* Argon2Opt.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B425B29609004F9B26 /* Argon2Opt.vcxproj.filters */; };
+		A460156125B29609004F9B26 /* Argon2Opt.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B425B29609004F9B26 /* Argon2Opt.vcxproj.filters */; };
+		A460156225B29609004F9B26 /* Argon2Opt.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B425B29609004F9B26 /* Argon2Opt.vcxproj.filters */; };
+		A460156325B29609004F9B26 /* Argon2Opt.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B425B29609004F9B26 /* Argon2Opt.vcxproj.filters */; };
+		A460156425B29609004F9B26 /* Argon2OptDll.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B625B29609004F9B26 /* Argon2OptDll.vcxproj */; };
+		A460156525B29609004F9B26 /* Argon2OptDll.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B625B29609004F9B26 /* Argon2OptDll.vcxproj */; };
+		A460156625B29609004F9B26 /* Argon2OptDll.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B625B29609004F9B26 /* Argon2OptDll.vcxproj */; };
+		A460156725B29609004F9B26 /* Argon2OptDll.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014B625B29609004F9B26 /* Argon2OptDll.vcxproj */; };
+		A460156825B29609004F9B26 /* Argon2OptDll.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B725B29609004F9B26 /* Argon2OptDll.vcxproj.filters */; };
+		A460156925B29609004F9B26 /* Argon2OptDll.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B725B29609004F9B26 /* Argon2OptDll.vcxproj.filters */; };
+		A460156A25B29609004F9B26 /* Argon2OptDll.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B725B29609004F9B26 /* Argon2OptDll.vcxproj.filters */; };
+		A460156B25B29609004F9B26 /* Argon2OptDll.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B725B29609004F9B26 /* Argon2OptDll.vcxproj.filters */; };
+		A460156C25B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B925B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters */; };
+		A460156D25B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B925B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters */; };
+		A460156E25B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B925B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters */; };
+		A460156F25B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014B925B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters */; };
+		A460157025B29609004F9B26 /* Argon2RefTestCI.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BA25B29609004F9B26 /* Argon2RefTestCI.vcxproj */; };
+		A460157125B29609004F9B26 /* Argon2RefTestCI.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BA25B29609004F9B26 /* Argon2RefTestCI.vcxproj */; };
+		A460157225B29609004F9B26 /* Argon2RefTestCI.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BA25B29609004F9B26 /* Argon2RefTestCI.vcxproj */; };
+		A460157325B29609004F9B26 /* Argon2RefTestCI.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BA25B29609004F9B26 /* Argon2RefTestCI.vcxproj */; };
+		A460157425B29609004F9B26 /* Argon2OptTestCI.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BC25B29609004F9B26 /* Argon2OptTestCI.vcxproj */; };
+		A460157525B29609004F9B26 /* Argon2OptTestCI.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BC25B29609004F9B26 /* Argon2OptTestCI.vcxproj */; };
+		A460157625B29609004F9B26 /* Argon2OptTestCI.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BC25B29609004F9B26 /* Argon2OptTestCI.vcxproj */; };
+		A460157725B29609004F9B26 /* Argon2OptTestCI.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BC25B29609004F9B26 /* Argon2OptTestCI.vcxproj */; };
+		A460157825B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014BD25B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters */; };
+		A460157925B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014BD25B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters */; };
+		A460157A25B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014BD25B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters */; };
+		A460157B25B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014BD25B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters */; };
+		A460157C25B29609004F9B26 /* Argon2RefBench.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BF25B29609004F9B26 /* Argon2RefBench.vcxproj */; };
+		A460157D25B29609004F9B26 /* Argon2RefBench.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BF25B29609004F9B26 /* Argon2RefBench.vcxproj */; };
+		A460157E25B29609004F9B26 /* Argon2RefBench.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BF25B29609004F9B26 /* Argon2RefBench.vcxproj */; };
+		A460157F25B29609004F9B26 /* Argon2RefBench.vcxproj in Resources */ = {isa = PBXBuildFile; fileRef = A46014BF25B29609004F9B26 /* Argon2RefBench.vcxproj */; };
+		A460158025B29609004F9B26 /* Argon2RefBench.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014C025B29609004F9B26 /* Argon2RefBench.vcxproj.filters */; };
+		A460158125B29609004F9B26 /* Argon2RefBench.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014C025B29609004F9B26 /* Argon2RefBench.vcxproj.filters */; };
+		A460158225B29609004F9B26 /* Argon2RefBench.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014C025B29609004F9B26 /* Argon2RefBench.vcxproj.filters */; };
+		A460158325B29609004F9B26 /* Argon2RefBench.vcxproj.filters in Resources */ = {isa = PBXBuildFile; fileRef = A46014C025B29609004F9B26 /* Argon2RefBench.vcxproj.filters */; };
+		A460158425B29609004F9B26 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A46014C125B29609004F9B26 /* .gitignore */; };
+		A460158525B29609004F9B26 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A46014C125B29609004F9B26 /* .gitignore */; };
+		A460158625B29609004F9B26 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A46014C125B29609004F9B26 /* .gitignore */; };
+		A460158725B29609004F9B26 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A46014C125B29609004F9B26 /* .gitignore */; };
+		A460158825B29609004F9B26 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A46014C225B29609004F9B26 /* .gitattributes */; };
+		A460158925B29609004F9B26 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A46014C225B29609004F9B26 /* .gitattributes */; };
+		A460158A25B29609004F9B26 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A46014C225B29609004F9B26 /* .gitattributes */; };
+		A460158B25B29609004F9B26 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = A46014C225B29609004F9B26 /* .gitattributes */; };
+		A460158C25B2960A004F9B26 /* argon2i.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014C425B29609004F9B26 /* argon2i.shasum */; };
+		A460158D25B2960A004F9B26 /* argon2i.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014C425B29609004F9B26 /* argon2i.shasum */; };
+		A460158E25B2960A004F9B26 /* argon2i.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014C425B29609004F9B26 /* argon2i.shasum */; };
+		A460158F25B2960A004F9B26 /* argon2i.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014C425B29609004F9B26 /* argon2i.shasum */; };
+		A460159025B2960A004F9B26 /* check-sums.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014C525B29609004F9B26 /* check-sums.sh */; };
+		A460159125B2960A004F9B26 /* check-sums.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014C525B29609004F9B26 /* check-sums.sh */; };
+		A460159225B2960A004F9B26 /* check-sums.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014C525B29609004F9B26 /* check-sums.sh */; };
+		A460159325B2960A004F9B26 /* check-sums.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014C525B29609004F9B26 /* check-sums.sh */; };
+		A460159425B2960A004F9B26 /* test.ps1 in Resources */ = {isa = PBXBuildFile; fileRef = A46014C625B29609004F9B26 /* test.ps1 */; };
+		A460159525B2960A004F9B26 /* test.ps1 in Resources */ = {isa = PBXBuildFile; fileRef = A46014C625B29609004F9B26 /* test.ps1 */; };
+		A460159625B2960A004F9B26 /* test.ps1 in Resources */ = {isa = PBXBuildFile; fileRef = A46014C625B29609004F9B26 /* test.ps1 */; };
+		A460159725B2960A004F9B26 /* test.ps1 in Resources */ = {isa = PBXBuildFile; fileRef = A46014C625B29609004F9B26 /* test.ps1 */; };
+		A460159825B2960A004F9B26 /* argon2id_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014C725B29609004F9B26 /* argon2id_v16.shasum */; };
+		A460159925B2960A004F9B26 /* argon2id_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014C725B29609004F9B26 /* argon2id_v16.shasum */; };
+		A460159A25B2960A004F9B26 /* argon2id_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014C725B29609004F9B26 /* argon2id_v16.shasum */; };
+		A460159B25B2960A004F9B26 /* argon2id_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014C725B29609004F9B26 /* argon2id_v16.shasum */; };
+		A460159C25B2960A004F9B26 /* argon2d_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014C825B29609004F9B26 /* argon2d_v16 */; };
+		A460159D25B2960A004F9B26 /* argon2d_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014C825B29609004F9B26 /* argon2d_v16 */; };
+		A460159E25B2960A004F9B26 /* argon2d_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014C825B29609004F9B26 /* argon2d_v16 */; };
+		A460159F25B2960A004F9B26 /* argon2d_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014C825B29609004F9B26 /* argon2d_v16 */; };
+		A46015A025B2960A004F9B26 /* argon2i in Resources */ = {isa = PBXBuildFile; fileRef = A46014C925B29609004F9B26 /* argon2i */; };
+		A46015A125B2960A004F9B26 /* argon2i in Resources */ = {isa = PBXBuildFile; fileRef = A46014C925B29609004F9B26 /* argon2i */; };
+		A46015A225B2960A004F9B26 /* argon2i in Resources */ = {isa = PBXBuildFile; fileRef = A46014C925B29609004F9B26 /* argon2i */; };
+		A46015A325B2960A004F9B26 /* argon2i in Resources */ = {isa = PBXBuildFile; fileRef = A46014C925B29609004F9B26 /* argon2i */; };
+		A46015A425B2960A004F9B26 /* argon2id.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CA25B29609004F9B26 /* argon2id.shasum */; };
+		A46015A525B2960A004F9B26 /* argon2id.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CA25B29609004F9B26 /* argon2id.shasum */; };
+		A46015A625B2960A004F9B26 /* argon2id.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CA25B29609004F9B26 /* argon2id.shasum */; };
+		A46015A725B2960A004F9B26 /* argon2id.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CA25B29609004F9B26 /* argon2id.shasum */; };
+		A46015A825B2960A004F9B26 /* argon2i_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CB25B29609004F9B26 /* argon2i_v16.shasum */; };
+		A46015A925B2960A004F9B26 /* argon2i_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CB25B29609004F9B26 /* argon2i_v16.shasum */; };
+		A46015AA25B2960A004F9B26 /* argon2i_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CB25B29609004F9B26 /* argon2i_v16.shasum */; };
+		A46015AB25B2960A004F9B26 /* argon2i_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CB25B29609004F9B26 /* argon2i_v16.shasum */; };
+		A46015AC25B2960A004F9B26 /* check-sums.ps1 in Resources */ = {isa = PBXBuildFile; fileRef = A46014CC25B29609004F9B26 /* check-sums.ps1 */; };
+		A46015AD25B2960A004F9B26 /* check-sums.ps1 in Resources */ = {isa = PBXBuildFile; fileRef = A46014CC25B29609004F9B26 /* check-sums.ps1 */; };
+		A46015AE25B2960A004F9B26 /* check-sums.ps1 in Resources */ = {isa = PBXBuildFile; fileRef = A46014CC25B29609004F9B26 /* check-sums.ps1 */; };
+		A46015AF25B2960A004F9B26 /* check-sums.ps1 in Resources */ = {isa = PBXBuildFile; fileRef = A46014CC25B29609004F9B26 /* check-sums.ps1 */; };
+		A46015B025B2960A004F9B26 /* argon2d.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CD25B29609004F9B26 /* argon2d.shasum */; };
+		A46015B125B2960A004F9B26 /* argon2d.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CD25B29609004F9B26 /* argon2d.shasum */; };
+		A46015B225B2960A004F9B26 /* argon2d.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CD25B29609004F9B26 /* argon2d.shasum */; };
+		A46015B325B2960A004F9B26 /* argon2d.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CD25B29609004F9B26 /* argon2d.shasum */; };
+		A46015B425B2960A004F9B26 /* argon2d_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CE25B29609004F9B26 /* argon2d_v16.shasum */; };
+		A46015B525B2960A004F9B26 /* argon2d_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CE25B29609004F9B26 /* argon2d_v16.shasum */; };
+		A46015B625B2960A004F9B26 /* argon2d_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CE25B29609004F9B26 /* argon2d_v16.shasum */; };
+		A46015B725B2960A004F9B26 /* argon2d_v16.shasum in Resources */ = {isa = PBXBuildFile; fileRef = A46014CE25B29609004F9B26 /* argon2d_v16.shasum */; };
+		A46015B825B2960A004F9B26 /* argon2id_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014CF25B29609004F9B26 /* argon2id_v16 */; };
+		A46015B925B2960A004F9B26 /* argon2id_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014CF25B29609004F9B26 /* argon2id_v16 */; };
+		A46015BA25B2960A004F9B26 /* argon2id_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014CF25B29609004F9B26 /* argon2id_v16 */; };
+		A46015BB25B2960A004F9B26 /* argon2id_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014CF25B29609004F9B26 /* argon2id_v16 */; };
+		A46015BC25B2960A004F9B26 /* argon2id in Resources */ = {isa = PBXBuildFile; fileRef = A46014D025B29609004F9B26 /* argon2id */; };
+		A46015BD25B2960A004F9B26 /* argon2id in Resources */ = {isa = PBXBuildFile; fileRef = A46014D025B29609004F9B26 /* argon2id */; };
+		A46015BE25B2960A004F9B26 /* argon2id in Resources */ = {isa = PBXBuildFile; fileRef = A46014D025B29609004F9B26 /* argon2id */; };
+		A46015BF25B2960A004F9B26 /* argon2id in Resources */ = {isa = PBXBuildFile; fileRef = A46014D025B29609004F9B26 /* argon2id */; };
+		A46015C025B2960A004F9B26 /* argon2d in Resources */ = {isa = PBXBuildFile; fileRef = A46014D125B29609004F9B26 /* argon2d */; };
+		A46015C125B2960A004F9B26 /* argon2d in Resources */ = {isa = PBXBuildFile; fileRef = A46014D125B29609004F9B26 /* argon2d */; };
+		A46015C225B2960A004F9B26 /* argon2d in Resources */ = {isa = PBXBuildFile; fileRef = A46014D125B29609004F9B26 /* argon2d */; };
+		A46015C325B2960A004F9B26 /* argon2d in Resources */ = {isa = PBXBuildFile; fileRef = A46014D125B29609004F9B26 /* argon2d */; };
+		A46015C425B2960A004F9B26 /* argon2i_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014D225B29609004F9B26 /* argon2i_v16 */; };
+		A46015C525B2960A004F9B26 /* argon2i_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014D225B29609004F9B26 /* argon2i_v16 */; };
+		A46015C625B2960A004F9B26 /* argon2i_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014D225B29609004F9B26 /* argon2i_v16 */; };
+		A46015C725B2960A004F9B26 /* argon2i_v16 in Resources */ = {isa = PBXBuildFile; fileRef = A46014D225B29609004F9B26 /* argon2i_v16 */; };
+		A46015C825B2960A004F9B26 /* test.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014D325B29609004F9B26 /* test.sh */; };
+		A46015C925B2960A004F9B26 /* test.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014D325B29609004F9B26 /* test.sh */; };
+		A46015CA25B2960A004F9B26 /* test.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014D325B29609004F9B26 /* test.sh */; };
+		A46015CB25B2960A004F9B26 /* test.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014D325B29609004F9B26 /* test.sh */; };
+		A46015CC25B2960A004F9B26 /* libargon2.pc.in in Resources */ = {isa = PBXBuildFile; fileRef = A46014D425B29609004F9B26 /* libargon2.pc.in */; };
+		A46015CD25B2960A004F9B26 /* libargon2.pc.in in Resources */ = {isa = PBXBuildFile; fileRef = A46014D425B29609004F9B26 /* libargon2.pc.in */; };
+		A46015CE25B2960A004F9B26 /* libargon2.pc.in in Resources */ = {isa = PBXBuildFile; fileRef = A46014D425B29609004F9B26 /* libargon2.pc.in */; };
+		A46015CF25B2960A004F9B26 /* libargon2.pc.in in Resources */ = {isa = PBXBuildFile; fileRef = A46014D425B29609004F9B26 /* libargon2.pc.in */; };
+		A46015D025B2960A004F9B26 /* export.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014D825B29609004F9B26 /* export.sh */; };
+		A46015D125B2960A004F9B26 /* export.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014D825B29609004F9B26 /* export.sh */; };
+		A46015D225B2960A004F9B26 /* export.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014D825B29609004F9B26 /* export.sh */; };
+		A46015D325B2960A004F9B26 /* export.sh in Resources */ = {isa = PBXBuildFile; fileRef = A46014D825B29609004F9B26 /* export.sh */; };
+		A46015D425B2960A004F9B26 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = A46014D925B29609004F9B26 /* .travis.yml */; };
+		A46015D525B2960A004F9B26 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = A46014D925B29609004F9B26 /* .travis.yml */; };
+		A46015D625B2960A004F9B26 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = A46014D925B29609004F9B26 /* .travis.yml */; };
+		A46015D725B2960A004F9B26 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = A46014D925B29609004F9B26 /* .travis.yml */; };
+		A46015D825B2960A004F9B26 /* genkat.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DB25B29609004F9B26 /* genkat.h */; };
+		A46015D925B2960A004F9B26 /* genkat.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DB25B29609004F9B26 /* genkat.h */; };
+		A46015DA25B2960A004F9B26 /* genkat.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DB25B29609004F9B26 /* genkat.h */; };
+		A46015DB25B2960A004F9B26 /* genkat.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DB25B29609004F9B26 /* genkat.h */; };
+		A46015DC25B2960A004F9B26 /* opt.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DC25B29609004F9B26 /* opt.c */; };
+		A46015DD25B2960A004F9B26 /* opt.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DC25B29609004F9B26 /* opt.c */; };
+		A46015DE25B2960A004F9B26 /* opt.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DC25B29609004F9B26 /* opt.c */; };
+		A46015DF25B2960A004F9B26 /* opt.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DC25B29609004F9B26 /* opt.c */; };
+		A46015E025B2960A004F9B26 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DD25B29609004F9B26 /* thread.c */; };
+		A46015E125B2960A004F9B26 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DD25B29609004F9B26 /* thread.c */; };
+		A46015E225B2960A004F9B26 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DD25B29609004F9B26 /* thread.c */; };
+		A46015E325B2960A004F9B26 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DD25B29609004F9B26 /* thread.c */; };
+		A46015E425B2960A004F9B26 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; };
+		A46015E525B2960A004F9B26 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; };
+		A46015E625B2960A004F9B26 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; };
+		A46015E725B2960A004F9B26 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; };
+		A46015E825B2960A004F9B26 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; };
+		A46015E925B2960A004F9B26 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; };
+		A46015EA25B2960A004F9B26 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; };
+		A46015EB25B2960A004F9B26 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; };
+		A46015EC25B2960A004F9B26 /* blamka-round-opt.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E125B29609004F9B26 /* blamka-round-opt.h */; };
+		A46015ED25B2960A004F9B26 /* blamka-round-opt.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E125B29609004F9B26 /* blamka-round-opt.h */; };
+		A46015EE25B2960A004F9B26 /* blamka-round-opt.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E125B29609004F9B26 /* blamka-round-opt.h */; };
+		A46015EF25B2960A004F9B26 /* blamka-round-opt.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E125B29609004F9B26 /* blamka-round-opt.h */; };
+		A46015F025B2960A004F9B26 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; };
+		A46015F125B2960A004F9B26 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; };
+		A46015F225B2960A004F9B26 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; };
+		A46015F325B2960A004F9B26 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; };
+		A46015F425B2960A004F9B26 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E325B29609004F9B26 /* blake2b.c */; };
+		A46015F525B2960A004F9B26 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E325B29609004F9B26 /* blake2b.c */; };
+		A46015F625B2960A004F9B26 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E325B29609004F9B26 /* blake2b.c */; };
+		A46015F725B2960A004F9B26 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E325B29609004F9B26 /* blake2b.c */; };
+		A46015F825B2960A004F9B26 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; };
+		A46015F925B2960A004F9B26 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; };
+		A46015FA25B2960A004F9B26 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; };
+		A46015FB25B2960A004F9B26 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; };
+		A46015FC25B2960A004F9B26 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E525B29609004F9B26 /* ref.c */; };
+		A46015FD25B2960A004F9B26 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E525B29609004F9B26 /* ref.c */; };
+		A46015FE25B2960A004F9B26 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E525B29609004F9B26 /* ref.c */; };
+		A46015FF25B2960A004F9B26 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E525B29609004F9B26 /* ref.c */; };
+		A460160025B2960A004F9B26 /* run.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E625B29609004F9B26 /* run.c */; };
+		A460160125B2960A004F9B26 /* run.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E625B29609004F9B26 /* run.c */; };
+		A460160225B2960A004F9B26 /* run.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E625B29609004F9B26 /* run.c */; };
+		A460160325B2960A004F9B26 /* run.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E625B29609004F9B26 /* run.c */; };
+		A460160425B2960A004F9B26 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; };
+		A460160525B2960A004F9B26 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; };
+		A460160625B2960A004F9B26 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; };
+		A460160725B2960A004F9B26 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; };
+		A460160825B2960A004F9B26 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E825B29609004F9B26 /* core.c */; };
+		A460160925B2960A004F9B26 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E825B29609004F9B26 /* core.c */; };
+		A460160A25B2960A004F9B26 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E825B29609004F9B26 /* core.c */; };
+		A460160B25B2960A004F9B26 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E825B29609004F9B26 /* core.c */; };
+		A460160C25B2960A004F9B26 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; };
+		A460160D25B2960A004F9B26 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; };
+		A460160E25B2960A004F9B26 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; };
+		A460160F25B2960A004F9B26 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; };
+		A460161025B2960A004F9B26 /* genkat.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EA25B29609004F9B26 /* genkat.c */; };
+		A460161125B2960A004F9B26 /* genkat.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EA25B29609004F9B26 /* genkat.c */; };
+		A460161225B2960A004F9B26 /* genkat.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EA25B29609004F9B26 /* genkat.c */; };
+		A460161325B2960A004F9B26 /* genkat.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EA25B29609004F9B26 /* genkat.c */; };
+		A460161425B2960A004F9B26 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EB25B29609004F9B26 /* test.c */; };
+		A460161525B2960A004F9B26 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EB25B29609004F9B26 /* test.c */; };
+		A460161625B2960A004F9B26 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EB25B29609004F9B26 /* test.c */; };
+		A460161725B2960A004F9B26 /* test.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EB25B29609004F9B26 /* test.c */; };
+		A460161825B2960A004F9B26 /* bench.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EC25B29609004F9B26 /* bench.c */; };
+		A460161925B2960A004F9B26 /* bench.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EC25B29609004F9B26 /* bench.c */; };
+		A460161A25B2960A004F9B26 /* bench.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EC25B29609004F9B26 /* bench.c */; };
+		A460161B25B2960A004F9B26 /* bench.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EC25B29609004F9B26 /* bench.c */; };
+		A460161C25B2960A004F9B26 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014ED25B29609004F9B26 /* argon2.c */; };
+		A460161D25B2960A004F9B26 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014ED25B29609004F9B26 /* argon2.c */; };
+		A460161E25B2960A004F9B26 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014ED25B29609004F9B26 /* argon2.c */; };
+		A460161F25B2960A004F9B26 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014ED25B29609004F9B26 /* argon2.c */; };
+		A460162025B2960A004F9B26 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
+		A460162125B2960A004F9B26 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
+		A460162225B2960A004F9B26 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
+		A460162325B2960A004F9B26 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,8 +335,85 @@
 		A460116325B2867A004F9B26 /* Info-macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-macOS.plist"; sourceTree = "<group>"; };
 		A460117025B286B4004F9B26 /* Argon2Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Argon2Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A460117325B286B4004F9B26 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
-		A460118725B286F0004F9B26 /* Argon2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argon2.swift; sourceTree = "<group>"; };
-		A46011BC25B28A9E004F9B26 /* Argon2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Argon2; sourceTree = "<group>"; };
+		A460118725B286F0004F9B26 /* Argon2Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argon2Swift.swift; sourceTree = "<group>"; };
+		A460148E25B29608004F9B26 /* argon2.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = argon2.1; sourceTree = "<group>"; };
+		A460148F25B29608004F9B26 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A460149025B29608004F9B26 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		A460149125B29608004F9B26 /* argon2-specs.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "argon2-specs.pdf"; sourceTree = "<group>"; };
+		A460149225B29608004F9B26 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A460149425B29609004F9B26 /* argon2-specs.tex */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "argon2-specs.tex"; sourceTree = "<group>"; };
+		A460149525B29609004F9B26 /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		A460149725B29609004F9B26 /* argon2-par.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "argon2-par.pdf"; sourceTree = "<group>"; };
+		A460149825B29609004F9B26 /* generic.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = generic.pdf; sourceTree = "<group>"; };
+		A460149925B29609004F9B26 /* compression.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = compression.pdf; sourceTree = "<group>"; };
+		A460149A25B29609004F9B26 /* power-distribution.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "power-distribution.jpg"; sourceTree = "<group>"; };
+		A460149B25B29609004F9B26 /* IEEEtran.cls */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IEEEtran.cls; sourceTree = "<group>"; };
+		A460149C25B29609004F9B26 /* tradeoff.bib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tradeoff.bib; sourceTree = "<group>"; };
+		A460149E25B29609004F9B26 /* argon2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = argon2.h; sourceTree = "<group>"; };
+		A460149F25B29609004F9B26 /* Argon2.sln */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Argon2.sln; sourceTree = "<group>"; };
+		A46014A025B29609004F9B26 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A46014A125B29609004F9B26 /* appveyor.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = appveyor.yml; sourceTree = "<group>"; };
+		A46014A425B29609004F9B26 /* Argon2Ref.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2Ref.vcxproj; sourceTree = "<group>"; };
+		A46014A525B29609004F9B26 /* Argon2Ref.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2Ref.vcxproj.filters; sourceTree = "<group>"; };
+		A46014A725B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2OptGenKAT.vcxproj.filters; sourceTree = "<group>"; };
+		A46014A825B29609004F9B26 /* Argon2OptGenKAT.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2OptGenKAT.vcxproj; sourceTree = "<group>"; };
+		A46014AA25B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2RefGenKAT.vcxproj.filters; sourceTree = "<group>"; };
+		A46014AB25B29609004F9B26 /* Argon2RefGenKAT.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2RefGenKAT.vcxproj; sourceTree = "<group>"; };
+		A46014AD25B29609004F9B26 /* Argon2RefDll.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2RefDll.vcxproj; sourceTree = "<group>"; };
+		A46014AE25B29609004F9B26 /* Argon2RefDll.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2RefDll.vcxproj.filters; sourceTree = "<group>"; };
+		A46014B025B29609004F9B26 /* Argon2OptBench.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2OptBench.vcxproj.filters; sourceTree = "<group>"; };
+		A46014B125B29609004F9B26 /* Argon2OptBench.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2OptBench.vcxproj; sourceTree = "<group>"; };
+		A46014B325B29609004F9B26 /* Argon2Opt.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2Opt.vcxproj; sourceTree = "<group>"; };
+		A46014B425B29609004F9B26 /* Argon2Opt.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2Opt.vcxproj.filters; sourceTree = "<group>"; };
+		A46014B625B29609004F9B26 /* Argon2OptDll.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2OptDll.vcxproj; sourceTree = "<group>"; };
+		A46014B725B29609004F9B26 /* Argon2OptDll.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2OptDll.vcxproj.filters; sourceTree = "<group>"; };
+		A46014B925B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2RefTestCI.vcxproj.filters; sourceTree = "<group>"; };
+		A46014BA25B29609004F9B26 /* Argon2RefTestCI.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2RefTestCI.vcxproj; sourceTree = "<group>"; };
+		A46014BC25B29609004F9B26 /* Argon2OptTestCI.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2OptTestCI.vcxproj; sourceTree = "<group>"; };
+		A46014BD25B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2OptTestCI.vcxproj.filters; sourceTree = "<group>"; };
+		A46014BF25B29609004F9B26 /* Argon2RefBench.vcxproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2RefBench.vcxproj; sourceTree = "<group>"; };
+		A46014C025B29609004F9B26 /* Argon2RefBench.vcxproj.filters */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Argon2RefBench.vcxproj.filters; sourceTree = "<group>"; };
+		A46014C125B29609004F9B26 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A46014C225B29609004F9B26 /* .gitattributes */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
+		A46014C425B29609004F9B26 /* argon2i.shasum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2i.shasum; sourceTree = "<group>"; };
+		A46014C525B29609004F9B26 /* check-sums.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "check-sums.sh"; sourceTree = "<group>"; };
+		A46014C625B29609004F9B26 /* test.ps1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.ps1; sourceTree = "<group>"; };
+		A46014C725B29609004F9B26 /* argon2id_v16.shasum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2id_v16.shasum; sourceTree = "<group>"; };
+		A46014C825B29609004F9B26 /* argon2d_v16 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2d_v16; sourceTree = "<group>"; };
+		A46014C925B29609004F9B26 /* argon2i */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2i; sourceTree = "<group>"; };
+		A46014CA25B29609004F9B26 /* argon2id.shasum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2id.shasum; sourceTree = "<group>"; };
+		A46014CB25B29609004F9B26 /* argon2i_v16.shasum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2i_v16.shasum; sourceTree = "<group>"; };
+		A46014CC25B29609004F9B26 /* check-sums.ps1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "check-sums.ps1"; sourceTree = "<group>"; };
+		A46014CD25B29609004F9B26 /* argon2d.shasum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2d.shasum; sourceTree = "<group>"; };
+		A46014CE25B29609004F9B26 /* argon2d_v16.shasum */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2d_v16.shasum; sourceTree = "<group>"; };
+		A46014CF25B29609004F9B26 /* argon2id_v16 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2id_v16; sourceTree = "<group>"; };
+		A46014D025B29609004F9B26 /* argon2id */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2id; sourceTree = "<group>"; };
+		A46014D125B29609004F9B26 /* argon2d */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2d; sourceTree = "<group>"; };
+		A46014D225B29609004F9B26 /* argon2i_v16 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = argon2i_v16; sourceTree = "<group>"; };
+		A46014D325B29609004F9B26 /* test.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
+		A46014D425B29609004F9B26 /* libargon2.pc.in */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = libargon2.pc.in; sourceTree = "<group>"; };
+		A46014D525B29609004F9B26 /* Argon2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Argon2.xcodeproj; sourceTree = "<group>"; };
+		A46014D825B29609004F9B26 /* export.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = export.sh; sourceTree = "<group>"; };
+		A46014D925B29609004F9B26 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .travis.yml; sourceTree = "<group>"; };
+		A46014DB25B29609004F9B26 /* genkat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genkat.h; sourceTree = "<group>"; };
+		A46014DC25B29609004F9B26 /* opt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = opt.c; sourceTree = "<group>"; };
+		A46014DD25B29609004F9B26 /* thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread.c; sourceTree = "<group>"; };
+		A46014DE25B29609004F9B26 /* core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		A46014E025B29609004F9B26 /* blamka-round-ref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "blamka-round-ref.h"; sourceTree = "<group>"; };
+		A46014E125B29609004F9B26 /* blamka-round-opt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "blamka-round-opt.h"; sourceTree = "<group>"; };
+		A46014E225B29609004F9B26 /* blake2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = blake2.h; sourceTree = "<group>"; };
+		A46014E325B29609004F9B26 /* blake2b.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = blake2b.c; sourceTree = "<group>"; };
+		A46014E425B29609004F9B26 /* blake2-impl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "blake2-impl.h"; sourceTree = "<group>"; };
+		A46014E525B29609004F9B26 /* ref.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ref.c; sourceTree = "<group>"; };
+		A46014E625B29609004F9B26 /* run.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = run.c; sourceTree = "<group>"; };
+		A46014E725B29609004F9B26 /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoding.h; sourceTree = "<group>"; };
+		A46014E825B29609004F9B26 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		A46014E925B29609004F9B26 /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		A46014EA25B29609004F9B26 /* genkat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = genkat.c; sourceTree = "<group>"; };
+		A46014EB25B29609004F9B26 /* test.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test.c; sourceTree = "<group>"; };
+		A46014EC25B29609004F9B26 /* bench.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bench.c; sourceTree = "<group>"; };
+		A46014ED25B29609004F9B26 /* argon2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = argon2.c; sourceTree = "<group>"; };
+		A46014EE25B29609004F9B26 /* encoding.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encoding.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,15 +470,251 @@
 		A460117C25B286CA004F9B26 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A46011BC25B28A9E004F9B26 /* Argon2 */,
+				A460148C25B29608004F9B26 /* Argon2 */,
+				A460118725B286F0004F9B26 /* Argon2Swift.swift */,
 				A460116225B2867A004F9B26 /* Argon2Swift.h */,
 				A460117325B286B4004F9B26 /* Info-watchOS.plist */,
 				A460116325B2867A004F9B26 /* Info-macOS.plist */,
 				A460115425B28625004F9B26 /* Info-tvOS.plist */,
 				A460114625B285C1004F9B26 /* Info-iOS.plist */,
-				A460118725B286F0004F9B26 /* Argon2.swift */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		A460148C25B29608004F9B26 /* Argon2 */ = {
+			isa = PBXGroup;
+			children = (
+				A460148D25B29608004F9B26 /* man */,
+				A460148F25B29608004F9B26 /* LICENSE */,
+				A460149025B29608004F9B26 /* CHANGELOG.md */,
+				A460149125B29608004F9B26 /* argon2-specs.pdf */,
+				A460149225B29608004F9B26 /* Makefile */,
+				A460149325B29609004F9B26 /* latex */,
+				A460149D25B29609004F9B26 /* include */,
+				A460149F25B29609004F9B26 /* Argon2.sln */,
+				A46014A025B29609004F9B26 /* README.md */,
+				A46014A125B29609004F9B26 /* appveyor.yml */,
+				A46014A225B29609004F9B26 /* vs2015 */,
+				A46014C125B29609004F9B26 /* .gitignore */,
+				A46014C225B29609004F9B26 /* .gitattributes */,
+				A46014C325B29609004F9B26 /* kats */,
+				A46014D425B29609004F9B26 /* libargon2.pc.in */,
+				A46014D525B29609004F9B26 /* Argon2.xcodeproj */,
+				A46014D825B29609004F9B26 /* export.sh */,
+				A46014D925B29609004F9B26 /* .travis.yml */,
+				A46014DA25B29609004F9B26 /* src */,
+			);
+			path = Argon2;
+			sourceTree = "<group>";
+		};
+		A460148D25B29608004F9B26 /* man */ = {
+			isa = PBXGroup;
+			children = (
+				A460148E25B29608004F9B26 /* argon2.1 */,
+			);
+			path = man;
+			sourceTree = "<group>";
+		};
+		A460149325B29609004F9B26 /* latex */ = {
+			isa = PBXGroup;
+			children = (
+				A460149425B29609004F9B26 /* argon2-specs.tex */,
+				A460149525B29609004F9B26 /* Makefile */,
+				A460149625B29609004F9B26 /* pics */,
+				A460149B25B29609004F9B26 /* IEEEtran.cls */,
+				A460149C25B29609004F9B26 /* tradeoff.bib */,
+			);
+			path = latex;
+			sourceTree = "<group>";
+		};
+		A460149625B29609004F9B26 /* pics */ = {
+			isa = PBXGroup;
+			children = (
+				A460149725B29609004F9B26 /* argon2-par.pdf */,
+				A460149825B29609004F9B26 /* generic.pdf */,
+				A460149925B29609004F9B26 /* compression.pdf */,
+				A460149A25B29609004F9B26 /* power-distribution.jpg */,
+			);
+			path = pics;
+			sourceTree = "<group>";
+		};
+		A460149D25B29609004F9B26 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				A460149E25B29609004F9B26 /* argon2.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		A46014A225B29609004F9B26 /* vs2015 */ = {
+			isa = PBXGroup;
+			children = (
+				A46014A325B29609004F9B26 /* Argon2Ref */,
+				A46014A625B29609004F9B26 /* Argon2OptGenKAT */,
+				A46014A925B29609004F9B26 /* Argon2RefGenKAT */,
+				A46014AC25B29609004F9B26 /* Argon2RefDll */,
+				A46014AF25B29609004F9B26 /* Argon2OptBench */,
+				A46014B225B29609004F9B26 /* Argon2Opt */,
+				A46014B525B29609004F9B26 /* Argon2OptDll */,
+				A46014B825B29609004F9B26 /* Argon2RefTestCI */,
+				A46014BB25B29609004F9B26 /* Argon2OptTestCI */,
+				A46014BE25B29609004F9B26 /* Argon2RefBench */,
+			);
+			path = vs2015;
+			sourceTree = "<group>";
+		};
+		A46014A325B29609004F9B26 /* Argon2Ref */ = {
+			isa = PBXGroup;
+			children = (
+				A46014A425B29609004F9B26 /* Argon2Ref.vcxproj */,
+				A46014A525B29609004F9B26 /* Argon2Ref.vcxproj.filters */,
+			);
+			path = Argon2Ref;
+			sourceTree = "<group>";
+		};
+		A46014A625B29609004F9B26 /* Argon2OptGenKAT */ = {
+			isa = PBXGroup;
+			children = (
+				A46014A725B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters */,
+				A46014A825B29609004F9B26 /* Argon2OptGenKAT.vcxproj */,
+			);
+			path = Argon2OptGenKAT;
+			sourceTree = "<group>";
+		};
+		A46014A925B29609004F9B26 /* Argon2RefGenKAT */ = {
+			isa = PBXGroup;
+			children = (
+				A46014AA25B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters */,
+				A46014AB25B29609004F9B26 /* Argon2RefGenKAT.vcxproj */,
+			);
+			path = Argon2RefGenKAT;
+			sourceTree = "<group>";
+		};
+		A46014AC25B29609004F9B26 /* Argon2RefDll */ = {
+			isa = PBXGroup;
+			children = (
+				A46014AD25B29609004F9B26 /* Argon2RefDll.vcxproj */,
+				A46014AE25B29609004F9B26 /* Argon2RefDll.vcxproj.filters */,
+			);
+			path = Argon2RefDll;
+			sourceTree = "<group>";
+		};
+		A46014AF25B29609004F9B26 /* Argon2OptBench */ = {
+			isa = PBXGroup;
+			children = (
+				A46014B025B29609004F9B26 /* Argon2OptBench.vcxproj.filters */,
+				A46014B125B29609004F9B26 /* Argon2OptBench.vcxproj */,
+			);
+			path = Argon2OptBench;
+			sourceTree = "<group>";
+		};
+		A46014B225B29609004F9B26 /* Argon2Opt */ = {
+			isa = PBXGroup;
+			children = (
+				A46014B325B29609004F9B26 /* Argon2Opt.vcxproj */,
+				A46014B425B29609004F9B26 /* Argon2Opt.vcxproj.filters */,
+			);
+			path = Argon2Opt;
+			sourceTree = "<group>";
+		};
+		A46014B525B29609004F9B26 /* Argon2OptDll */ = {
+			isa = PBXGroup;
+			children = (
+				A46014B625B29609004F9B26 /* Argon2OptDll.vcxproj */,
+				A46014B725B29609004F9B26 /* Argon2OptDll.vcxproj.filters */,
+			);
+			path = Argon2OptDll;
+			sourceTree = "<group>";
+		};
+		A46014B825B29609004F9B26 /* Argon2RefTestCI */ = {
+			isa = PBXGroup;
+			children = (
+				A46014B925B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters */,
+				A46014BA25B29609004F9B26 /* Argon2RefTestCI.vcxproj */,
+			);
+			path = Argon2RefTestCI;
+			sourceTree = "<group>";
+		};
+		A46014BB25B29609004F9B26 /* Argon2OptTestCI */ = {
+			isa = PBXGroup;
+			children = (
+				A46014BC25B29609004F9B26 /* Argon2OptTestCI.vcxproj */,
+				A46014BD25B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters */,
+			);
+			path = Argon2OptTestCI;
+			sourceTree = "<group>";
+		};
+		A46014BE25B29609004F9B26 /* Argon2RefBench */ = {
+			isa = PBXGroup;
+			children = (
+				A46014BF25B29609004F9B26 /* Argon2RefBench.vcxproj */,
+				A46014C025B29609004F9B26 /* Argon2RefBench.vcxproj.filters */,
+			);
+			path = Argon2RefBench;
+			sourceTree = "<group>";
+		};
+		A46014C325B29609004F9B26 /* kats */ = {
+			isa = PBXGroup;
+			children = (
+				A46014C425B29609004F9B26 /* argon2i.shasum */,
+				A46014C525B29609004F9B26 /* check-sums.sh */,
+				A46014C625B29609004F9B26 /* test.ps1 */,
+				A46014C725B29609004F9B26 /* argon2id_v16.shasum */,
+				A46014C825B29609004F9B26 /* argon2d_v16 */,
+				A46014C925B29609004F9B26 /* argon2i */,
+				A46014CA25B29609004F9B26 /* argon2id.shasum */,
+				A46014CB25B29609004F9B26 /* argon2i_v16.shasum */,
+				A46014CC25B29609004F9B26 /* check-sums.ps1 */,
+				A46014CD25B29609004F9B26 /* argon2d.shasum */,
+				A46014CE25B29609004F9B26 /* argon2d_v16.shasum */,
+				A46014CF25B29609004F9B26 /* argon2id_v16 */,
+				A46014D025B29609004F9B26 /* argon2id */,
+				A46014D125B29609004F9B26 /* argon2d */,
+				A46014D225B29609004F9B26 /* argon2i_v16 */,
+				A46014D325B29609004F9B26 /* test.sh */,
+			);
+			path = kats;
+			sourceTree = "<group>";
+		};
+		A46014D625B29609004F9B26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A46014DA25B29609004F9B26 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				A46014DB25B29609004F9B26 /* genkat.h */,
+				A46014DC25B29609004F9B26 /* opt.c */,
+				A46014DD25B29609004F9B26 /* thread.c */,
+				A46014DE25B29609004F9B26 /* core.h */,
+				A46014DF25B29609004F9B26 /* blake2 */,
+				A46014E525B29609004F9B26 /* ref.c */,
+				A46014E625B29609004F9B26 /* run.c */,
+				A46014E725B29609004F9B26 /* encoding.h */,
+				A46014E825B29609004F9B26 /* core.c */,
+				A46014E925B29609004F9B26 /* thread.h */,
+				A46014EA25B29609004F9B26 /* genkat.c */,
+				A46014EB25B29609004F9B26 /* test.c */,
+				A46014EC25B29609004F9B26 /* bench.c */,
+				A46014ED25B29609004F9B26 /* argon2.c */,
+				A46014EE25B29609004F9B26 /* encoding.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		A46014DF25B29609004F9B26 /* blake2 */ = {
+			isa = PBXGroup;
+			children = (
+				A46014E025B29609004F9B26 /* blamka-round-ref.h */,
+				A46014E125B29609004F9B26 /* blamka-round-opt.h */,
+				A46014E225B29609004F9B26 /* blake2.h */,
+				A46014E325B29609004F9B26 /* blake2b.c */,
+				A46014E425B29609004F9B26 /* blake2-impl.h */,
+			);
+			path = blake2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -108,6 +725,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A46011AE25B28972004F9B26 /* Argon2Swift.h in Headers */,
+				A46015E425B2960A004F9B26 /* core.h in Headers */,
+				A460160C25B2960A004F9B26 /* thread.h in Headers */,
+				A460152425B29609004F9B26 /* argon2.h in Headers */,
+				A46015F825B2960A004F9B26 /* blake2-impl.h in Headers */,
+				A46015E825B2960A004F9B26 /* blamka-round-ref.h in Headers */,
+				A46015D825B2960A004F9B26 /* genkat.h in Headers */,
+				A46015F025B2960A004F9B26 /* blake2.h in Headers */,
+				A460160425B2960A004F9B26 /* encoding.h in Headers */,
+				A46015EC25B2960A004F9B26 /* blamka-round-opt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +742,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A46011A125B2896B004F9B26 /* Argon2Swift.h in Headers */,
+				A46015E525B2960A004F9B26 /* core.h in Headers */,
+				A460160D25B2960A004F9B26 /* thread.h in Headers */,
+				A460152525B29609004F9B26 /* argon2.h in Headers */,
+				A46015F925B2960A004F9B26 /* blake2-impl.h in Headers */,
+				A46015E925B2960A004F9B26 /* blamka-round-ref.h in Headers */,
+				A46015D925B2960A004F9B26 /* genkat.h in Headers */,
+				A46015F125B2960A004F9B26 /* blake2.h in Headers */,
+				A460160525B2960A004F9B26 /* encoding.h in Headers */,
+				A46015ED25B2960A004F9B26 /* blamka-round-opt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +759,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A460116425B2867A004F9B26 /* Argon2Swift.h in Headers */,
+				A46015E625B2960A004F9B26 /* core.h in Headers */,
+				A460160E25B2960A004F9B26 /* thread.h in Headers */,
+				A460152625B29609004F9B26 /* argon2.h in Headers */,
+				A46015FA25B2960A004F9B26 /* blake2-impl.h in Headers */,
+				A46015EA25B2960A004F9B26 /* blamka-round-ref.h in Headers */,
+				A46015DA25B2960A004F9B26 /* genkat.h in Headers */,
+				A46015F225B2960A004F9B26 /* blake2.h in Headers */,
+				A460160625B2960A004F9B26 /* encoding.h in Headers */,
+				A46015EE25B2960A004F9B26 /* blamka-round-opt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +776,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A460119825B2895B004F9B26 /* Argon2Swift.h in Headers */,
+				A46015E725B2960A004F9B26 /* core.h in Headers */,
+				A460160F25B2960A004F9B26 /* thread.h in Headers */,
+				A460152725B29609004F9B26 /* argon2.h in Headers */,
+				A46015FB25B2960A004F9B26 /* blake2-impl.h in Headers */,
+				A46015EB25B2960A004F9B26 /* blamka-round-ref.h in Headers */,
+				A46015DB25B2960A004F9B26 /* genkat.h in Headers */,
+				A46015F325B2960A004F9B26 /* blake2.h in Headers */,
+				A460160725B2960A004F9B26 /* encoding.h in Headers */,
+				A46015EF25B2960A004F9B26 /* blamka-round-opt.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,6 +900,12 @@
 			mainGroup = A460113625B28539004F9B26;
 			productRefGroup = A460114325B285C1004F9B26 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A46014D625B29609004F9B26 /* Products */;
+					ProjectRef = A46014D525B29609004F9B26 /* Argon2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A460114125B285C1004F9B26 /* Argon2Swift iOS */,
@@ -262,7 +921,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46011BD25B28A9E004F9B26 /* Argon2 in Resources */,
+				A460157425B29609004F9B26 /* Argon2OptTestCI.vcxproj in Resources */,
+				A460153825B29609004F9B26 /* Argon2Ref.vcxproj.filters in Resources */,
+				A460154825B29609004F9B26 /* Argon2RefGenKAT.vcxproj in Resources */,
+				A460158C25B2960A004F9B26 /* argon2i.shasum in Resources */,
+				A460159425B2960A004F9B26 /* test.ps1 in Resources */,
+				A46015D425B2960A004F9B26 /* .travis.yml in Resources */,
+				A46014FC25B29609004F9B26 /* argon2-specs.pdf in Resources */,
+				A460154425B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters in Resources */,
+				A460151C25B29609004F9B26 /* IEEEtran.cls in Resources */,
+				A460154C25B29609004F9B26 /* Argon2RefDll.vcxproj in Resources */,
+				A460156C25B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters in Resources */,
+				A46015A425B2960A004F9B26 /* argon2id.shasum in Resources */,
+				A460157C25B29609004F9B26 /* Argon2RefBench.vcxproj in Resources */,
+				A460157825B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters in Resources */,
+				A460152825B29609004F9B26 /* Argon2.sln in Resources */,
+				A460158025B29609004F9B26 /* Argon2RefBench.vcxproj.filters in Resources */,
+				A460159025B2960A004F9B26 /* check-sums.sh in Resources */,
+				A460151425B29609004F9B26 /* compression.pdf in Resources */,
+				A460155C25B29609004F9B26 /* Argon2Opt.vcxproj in Resources */,
+				A46015B425B2960A004F9B26 /* argon2d_v16.shasum in Resources */,
+				A46015AC25B2960A004F9B26 /* check-sums.ps1 in Resources */,
+				A460152C25B29609004F9B26 /* README.md in Resources */,
+				A460158425B29609004F9B26 /* .gitignore in Resources */,
+				A460156025B29609004F9B26 /* Argon2Opt.vcxproj.filters in Resources */,
+				A460159825B2960A004F9B26 /* argon2id_v16.shasum in Resources */,
+				A46015C825B2960A004F9B26 /* test.sh in Resources */,
+				A460151025B29609004F9B26 /* generic.pdf in Resources */,
+				A460151825B29609004F9B26 /* power-distribution.jpg in Resources */,
+				A460158825B29609004F9B26 /* .gitattributes in Resources */,
+				A46015CC25B2960A004F9B26 /* libargon2.pc.in in Resources */,
+				A46015BC25B2960A004F9B26 /* argon2id in Resources */,
+				A460156825B29609004F9B26 /* Argon2OptDll.vcxproj.filters in Resources */,
+				A46015C425B2960A004F9B26 /* argon2i_v16 in Resources */,
+				A46014F425B29609004F9B26 /* LICENSE in Resources */,
+				A460150425B29609004F9B26 /* argon2-specs.tex in Resources */,
+				A46015D025B2960A004F9B26 /* export.sh in Resources */,
+				A460153C25B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters in Resources */,
+				A460150C25B29609004F9B26 /* argon2-par.pdf in Resources */,
+				A46014F825B29609004F9B26 /* CHANGELOG.md in Resources */,
+				A46014F025B29609004F9B26 /* argon2.1 in Resources */,
+				A460156425B29609004F9B26 /* Argon2OptDll.vcxproj in Resources */,
+				A460153425B29609004F9B26 /* Argon2Ref.vcxproj in Resources */,
+				A460155425B29609004F9B26 /* Argon2OptBench.vcxproj.filters in Resources */,
+				A46015C025B2960A004F9B26 /* argon2d in Resources */,
+				A460154025B29609004F9B26 /* Argon2OptGenKAT.vcxproj in Resources */,
+				A460155825B29609004F9B26 /* Argon2OptBench.vcxproj in Resources */,
+				A460155025B29609004F9B26 /* Argon2RefDll.vcxproj.filters in Resources */,
+				A460153025B29609004F9B26 /* appveyor.yml in Resources */,
+				A46015A825B2960A004F9B26 /* argon2i_v16.shasum in Resources */,
+				A460152025B29609004F9B26 /* tradeoff.bib in Resources */,
+				A46015B025B2960A004F9B26 /* argon2d.shasum in Resources */,
+				A46015A025B2960A004F9B26 /* argon2i in Resources */,
+				A460159C25B2960A004F9B26 /* argon2d_v16 in Resources */,
+				A46015B825B2960A004F9B26 /* argon2id_v16 in Resources */,
+				A460157025B29609004F9B26 /* Argon2RefTestCI.vcxproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +983,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46011BE25B28A9E004F9B26 /* Argon2 in Resources */,
+				A460157525B29609004F9B26 /* Argon2OptTestCI.vcxproj in Resources */,
+				A460153925B29609004F9B26 /* Argon2Ref.vcxproj.filters in Resources */,
+				A460154925B29609004F9B26 /* Argon2RefGenKAT.vcxproj in Resources */,
+				A460158D25B2960A004F9B26 /* argon2i.shasum in Resources */,
+				A460159525B2960A004F9B26 /* test.ps1 in Resources */,
+				A46015D525B2960A004F9B26 /* .travis.yml in Resources */,
+				A46014FD25B29609004F9B26 /* argon2-specs.pdf in Resources */,
+				A460154525B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters in Resources */,
+				A460151D25B29609004F9B26 /* IEEEtran.cls in Resources */,
+				A460154D25B29609004F9B26 /* Argon2RefDll.vcxproj in Resources */,
+				A460156D25B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters in Resources */,
+				A46015A525B2960A004F9B26 /* argon2id.shasum in Resources */,
+				A460157D25B29609004F9B26 /* Argon2RefBench.vcxproj in Resources */,
+				A460157925B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters in Resources */,
+				A460152925B29609004F9B26 /* Argon2.sln in Resources */,
+				A460158125B29609004F9B26 /* Argon2RefBench.vcxproj.filters in Resources */,
+				A460159125B2960A004F9B26 /* check-sums.sh in Resources */,
+				A460151525B29609004F9B26 /* compression.pdf in Resources */,
+				A460155D25B29609004F9B26 /* Argon2Opt.vcxproj in Resources */,
+				A46015B525B2960A004F9B26 /* argon2d_v16.shasum in Resources */,
+				A46015AD25B2960A004F9B26 /* check-sums.ps1 in Resources */,
+				A460152D25B29609004F9B26 /* README.md in Resources */,
+				A460158525B29609004F9B26 /* .gitignore in Resources */,
+				A460156125B29609004F9B26 /* Argon2Opt.vcxproj.filters in Resources */,
+				A460159925B2960A004F9B26 /* argon2id_v16.shasum in Resources */,
+				A46015C925B2960A004F9B26 /* test.sh in Resources */,
+				A460151125B29609004F9B26 /* generic.pdf in Resources */,
+				A460151925B29609004F9B26 /* power-distribution.jpg in Resources */,
+				A460158925B29609004F9B26 /* .gitattributes in Resources */,
+				A46015CD25B2960A004F9B26 /* libargon2.pc.in in Resources */,
+				A46015BD25B2960A004F9B26 /* argon2id in Resources */,
+				A460156925B29609004F9B26 /* Argon2OptDll.vcxproj.filters in Resources */,
+				A46015C525B2960A004F9B26 /* argon2i_v16 in Resources */,
+				A46014F525B29609004F9B26 /* LICENSE in Resources */,
+				A460150525B29609004F9B26 /* argon2-specs.tex in Resources */,
+				A46015D125B2960A004F9B26 /* export.sh in Resources */,
+				A460153D25B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters in Resources */,
+				A460150D25B29609004F9B26 /* argon2-par.pdf in Resources */,
+				A46014F925B29609004F9B26 /* CHANGELOG.md in Resources */,
+				A46014F125B29609004F9B26 /* argon2.1 in Resources */,
+				A460156525B29609004F9B26 /* Argon2OptDll.vcxproj in Resources */,
+				A460153525B29609004F9B26 /* Argon2Ref.vcxproj in Resources */,
+				A460155525B29609004F9B26 /* Argon2OptBench.vcxproj.filters in Resources */,
+				A46015C125B2960A004F9B26 /* argon2d in Resources */,
+				A460154125B29609004F9B26 /* Argon2OptGenKAT.vcxproj in Resources */,
+				A460155925B29609004F9B26 /* Argon2OptBench.vcxproj in Resources */,
+				A460155125B29609004F9B26 /* Argon2RefDll.vcxproj.filters in Resources */,
+				A460153125B29609004F9B26 /* appveyor.yml in Resources */,
+				A46015A925B2960A004F9B26 /* argon2i_v16.shasum in Resources */,
+				A460152125B29609004F9B26 /* tradeoff.bib in Resources */,
+				A46015B125B2960A004F9B26 /* argon2d.shasum in Resources */,
+				A46015A125B2960A004F9B26 /* argon2i in Resources */,
+				A460159D25B2960A004F9B26 /* argon2d_v16 in Resources */,
+				A46015B925B2960A004F9B26 /* argon2id_v16 in Resources */,
+				A460157125B29609004F9B26 /* Argon2RefTestCI.vcxproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +1045,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46011BF25B28A9E004F9B26 /* Argon2 in Resources */,
+				A460157625B29609004F9B26 /* Argon2OptTestCI.vcxproj in Resources */,
+				A460153A25B29609004F9B26 /* Argon2Ref.vcxproj.filters in Resources */,
+				A460154A25B29609004F9B26 /* Argon2RefGenKAT.vcxproj in Resources */,
+				A460158E25B2960A004F9B26 /* argon2i.shasum in Resources */,
+				A460159625B2960A004F9B26 /* test.ps1 in Resources */,
+				A46015D625B2960A004F9B26 /* .travis.yml in Resources */,
+				A46014FE25B29609004F9B26 /* argon2-specs.pdf in Resources */,
+				A460154625B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters in Resources */,
+				A460151E25B29609004F9B26 /* IEEEtran.cls in Resources */,
+				A460154E25B29609004F9B26 /* Argon2RefDll.vcxproj in Resources */,
+				A460156E25B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters in Resources */,
+				A46015A625B2960A004F9B26 /* argon2id.shasum in Resources */,
+				A460157E25B29609004F9B26 /* Argon2RefBench.vcxproj in Resources */,
+				A460157A25B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters in Resources */,
+				A460152A25B29609004F9B26 /* Argon2.sln in Resources */,
+				A460158225B29609004F9B26 /* Argon2RefBench.vcxproj.filters in Resources */,
+				A460159225B2960A004F9B26 /* check-sums.sh in Resources */,
+				A460151625B29609004F9B26 /* compression.pdf in Resources */,
+				A460155E25B29609004F9B26 /* Argon2Opt.vcxproj in Resources */,
+				A46015B625B2960A004F9B26 /* argon2d_v16.shasum in Resources */,
+				A46015AE25B2960A004F9B26 /* check-sums.ps1 in Resources */,
+				A460152E25B29609004F9B26 /* README.md in Resources */,
+				A460158625B29609004F9B26 /* .gitignore in Resources */,
+				A460156225B29609004F9B26 /* Argon2Opt.vcxproj.filters in Resources */,
+				A460159A25B2960A004F9B26 /* argon2id_v16.shasum in Resources */,
+				A46015CA25B2960A004F9B26 /* test.sh in Resources */,
+				A460151225B29609004F9B26 /* generic.pdf in Resources */,
+				A460151A25B29609004F9B26 /* power-distribution.jpg in Resources */,
+				A460158A25B29609004F9B26 /* .gitattributes in Resources */,
+				A46015CE25B2960A004F9B26 /* libargon2.pc.in in Resources */,
+				A46015BE25B2960A004F9B26 /* argon2id in Resources */,
+				A460156A25B29609004F9B26 /* Argon2OptDll.vcxproj.filters in Resources */,
+				A46015C625B2960A004F9B26 /* argon2i_v16 in Resources */,
+				A46014F625B29609004F9B26 /* LICENSE in Resources */,
+				A460150625B29609004F9B26 /* argon2-specs.tex in Resources */,
+				A46015D225B2960A004F9B26 /* export.sh in Resources */,
+				A460153E25B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters in Resources */,
+				A460150E25B29609004F9B26 /* argon2-par.pdf in Resources */,
+				A46014FA25B29609004F9B26 /* CHANGELOG.md in Resources */,
+				A46014F225B29609004F9B26 /* argon2.1 in Resources */,
+				A460156625B29609004F9B26 /* Argon2OptDll.vcxproj in Resources */,
+				A460153625B29609004F9B26 /* Argon2Ref.vcxproj in Resources */,
+				A460155625B29609004F9B26 /* Argon2OptBench.vcxproj.filters in Resources */,
+				A46015C225B2960A004F9B26 /* argon2d in Resources */,
+				A460154225B29609004F9B26 /* Argon2OptGenKAT.vcxproj in Resources */,
+				A460155A25B29609004F9B26 /* Argon2OptBench.vcxproj in Resources */,
+				A460155225B29609004F9B26 /* Argon2RefDll.vcxproj.filters in Resources */,
+				A460153225B29609004F9B26 /* appveyor.yml in Resources */,
+				A46015AA25B2960A004F9B26 /* argon2i_v16.shasum in Resources */,
+				A460152225B29609004F9B26 /* tradeoff.bib in Resources */,
+				A46015B225B2960A004F9B26 /* argon2d.shasum in Resources */,
+				A46015A225B2960A004F9B26 /* argon2i in Resources */,
+				A460159E25B2960A004F9B26 /* argon2d_v16 in Resources */,
+				A46015BA25B2960A004F9B26 /* argon2id_v16 in Resources */,
+				A460157225B29609004F9B26 /* Argon2RefTestCI.vcxproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,7 +1107,61 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46011C025B28A9E004F9B26 /* Argon2 in Resources */,
+				A460157725B29609004F9B26 /* Argon2OptTestCI.vcxproj in Resources */,
+				A460153B25B29609004F9B26 /* Argon2Ref.vcxproj.filters in Resources */,
+				A460154B25B29609004F9B26 /* Argon2RefGenKAT.vcxproj in Resources */,
+				A460158F25B2960A004F9B26 /* argon2i.shasum in Resources */,
+				A460159725B2960A004F9B26 /* test.ps1 in Resources */,
+				A46015D725B2960A004F9B26 /* .travis.yml in Resources */,
+				A46014FF25B29609004F9B26 /* argon2-specs.pdf in Resources */,
+				A460154725B29609004F9B26 /* Argon2RefGenKAT.vcxproj.filters in Resources */,
+				A460151F25B29609004F9B26 /* IEEEtran.cls in Resources */,
+				A460154F25B29609004F9B26 /* Argon2RefDll.vcxproj in Resources */,
+				A460156F25B29609004F9B26 /* Argon2RefTestCI.vcxproj.filters in Resources */,
+				A46015A725B2960A004F9B26 /* argon2id.shasum in Resources */,
+				A460157F25B29609004F9B26 /* Argon2RefBench.vcxproj in Resources */,
+				A460157B25B29609004F9B26 /* Argon2OptTestCI.vcxproj.filters in Resources */,
+				A460152B25B29609004F9B26 /* Argon2.sln in Resources */,
+				A460158325B29609004F9B26 /* Argon2RefBench.vcxproj.filters in Resources */,
+				A460159325B2960A004F9B26 /* check-sums.sh in Resources */,
+				A460151725B29609004F9B26 /* compression.pdf in Resources */,
+				A460155F25B29609004F9B26 /* Argon2Opt.vcxproj in Resources */,
+				A46015B725B2960A004F9B26 /* argon2d_v16.shasum in Resources */,
+				A46015AF25B2960A004F9B26 /* check-sums.ps1 in Resources */,
+				A460152F25B29609004F9B26 /* README.md in Resources */,
+				A460158725B29609004F9B26 /* .gitignore in Resources */,
+				A460156325B29609004F9B26 /* Argon2Opt.vcxproj.filters in Resources */,
+				A460159B25B2960A004F9B26 /* argon2id_v16.shasum in Resources */,
+				A46015CB25B2960A004F9B26 /* test.sh in Resources */,
+				A460151325B29609004F9B26 /* generic.pdf in Resources */,
+				A460151B25B29609004F9B26 /* power-distribution.jpg in Resources */,
+				A460158B25B29609004F9B26 /* .gitattributes in Resources */,
+				A46015CF25B2960A004F9B26 /* libargon2.pc.in in Resources */,
+				A46015BF25B2960A004F9B26 /* argon2id in Resources */,
+				A460156B25B29609004F9B26 /* Argon2OptDll.vcxproj.filters in Resources */,
+				A46015C725B2960A004F9B26 /* argon2i_v16 in Resources */,
+				A46014F725B29609004F9B26 /* LICENSE in Resources */,
+				A460150725B29609004F9B26 /* argon2-specs.tex in Resources */,
+				A46015D325B2960A004F9B26 /* export.sh in Resources */,
+				A460153F25B29609004F9B26 /* Argon2OptGenKAT.vcxproj.filters in Resources */,
+				A460150F25B29609004F9B26 /* argon2-par.pdf in Resources */,
+				A46014FB25B29609004F9B26 /* CHANGELOG.md in Resources */,
+				A46014F325B29609004F9B26 /* argon2.1 in Resources */,
+				A460156725B29609004F9B26 /* Argon2OptDll.vcxproj in Resources */,
+				A460153725B29609004F9B26 /* Argon2Ref.vcxproj in Resources */,
+				A460155725B29609004F9B26 /* Argon2OptBench.vcxproj.filters in Resources */,
+				A46015C325B2960A004F9B26 /* argon2d in Resources */,
+				A460154325B29609004F9B26 /* Argon2OptGenKAT.vcxproj in Resources */,
+				A460155B25B29609004F9B26 /* Argon2OptBench.vcxproj in Resources */,
+				A460155325B29609004F9B26 /* Argon2RefDll.vcxproj.filters in Resources */,
+				A460153325B29609004F9B26 /* appveyor.yml in Resources */,
+				A46015AB25B2960A004F9B26 /* argon2i_v16.shasum in Resources */,
+				A460152325B29609004F9B26 /* tradeoff.bib in Resources */,
+				A46015B325B2960A004F9B26 /* argon2d.shasum in Resources */,
+				A46015A325B2960A004F9B26 /* argon2i in Resources */,
+				A460159F25B2960A004F9B26 /* argon2d_v16 in Resources */,
+				A46015BB25B2960A004F9B26 /* argon2id_v16 in Resources */,
+				A460157325B29609004F9B26 /* Argon2RefTestCI.vcxproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +1172,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A460118825B286F0004F9B26 /* Argon2.swift in Sources */,
+				A460161825B2960A004F9B26 /* bench.c in Sources */,
+				A460150825B29609004F9B26 /* Makefile in Sources */,
+				A460162025B2960A004F9B26 /* encoding.c in Sources */,
+				A460161425B2960A004F9B26 /* test.c in Sources */,
+				A46015DC25B2960A004F9B26 /* opt.c in Sources */,
+				A46015E025B2960A004F9B26 /* thread.c in Sources */,
+				A460160025B2960A004F9B26 /* run.c in Sources */,
+				A46015FC25B2960A004F9B26 /* ref.c in Sources */,
+				A460161025B2960A004F9B26 /* genkat.c in Sources */,
+				A460160825B2960A004F9B26 /* core.c in Sources */,
+				A460150025B29609004F9B26 /* Makefile in Sources */,
+				A460161C25B2960A004F9B26 /* argon2.c in Sources */,
+				A460118825B286F0004F9B26 /* Argon2Swift.swift in Sources */,
+				A46015F425B2960A004F9B26 /* blake2b.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +1193,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A460118925B286F0004F9B26 /* Argon2.swift in Sources */,
+				A460161925B2960A004F9B26 /* bench.c in Sources */,
+				A460150925B29609004F9B26 /* Makefile in Sources */,
+				A460162125B2960A004F9B26 /* encoding.c in Sources */,
+				A460161525B2960A004F9B26 /* test.c in Sources */,
+				A46015DD25B2960A004F9B26 /* opt.c in Sources */,
+				A46015E125B2960A004F9B26 /* thread.c in Sources */,
+				A460160125B2960A004F9B26 /* run.c in Sources */,
+				A46015FD25B2960A004F9B26 /* ref.c in Sources */,
+				A460161125B2960A004F9B26 /* genkat.c in Sources */,
+				A460160925B2960A004F9B26 /* core.c in Sources */,
+				A460150125B29609004F9B26 /* Makefile in Sources */,
+				A460161D25B2960A004F9B26 /* argon2.c in Sources */,
+				A460118925B286F0004F9B26 /* Argon2Swift.swift in Sources */,
+				A46015F525B2960A004F9B26 /* blake2b.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,7 +1214,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A460118A25B286F0004F9B26 /* Argon2.swift in Sources */,
+				A460161A25B2960A004F9B26 /* bench.c in Sources */,
+				A460150A25B29609004F9B26 /* Makefile in Sources */,
+				A460162225B2960A004F9B26 /* encoding.c in Sources */,
+				A460161625B2960A004F9B26 /* test.c in Sources */,
+				A46015DE25B2960A004F9B26 /* opt.c in Sources */,
+				A46015E225B2960A004F9B26 /* thread.c in Sources */,
+				A460160225B2960A004F9B26 /* run.c in Sources */,
+				A46015FE25B2960A004F9B26 /* ref.c in Sources */,
+				A460161225B2960A004F9B26 /* genkat.c in Sources */,
+				A460160A25B2960A004F9B26 /* core.c in Sources */,
+				A460150225B29609004F9B26 /* Makefile in Sources */,
+				A460161E25B2960A004F9B26 /* argon2.c in Sources */,
+				A460118A25B286F0004F9B26 /* Argon2Swift.swift in Sources */,
+				A46015F625B2960A004F9B26 /* blake2b.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +1235,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A460118B25B286F0004F9B26 /* Argon2.swift in Sources */,
+				A460161B25B2960A004F9B26 /* bench.c in Sources */,
+				A460150B25B29609004F9B26 /* Makefile in Sources */,
+				A460162325B2960A004F9B26 /* encoding.c in Sources */,
+				A460161725B2960A004F9B26 /* test.c in Sources */,
+				A46015DF25B2960A004F9B26 /* opt.c in Sources */,
+				A46015E325B2960A004F9B26 /* thread.c in Sources */,
+				A460160325B2960A004F9B26 /* run.c in Sources */,
+				A46015FF25B2960A004F9B26 /* ref.c in Sources */,
+				A460161325B2960A004F9B26 /* genkat.c in Sources */,
+				A460160B25B2960A004F9B26 /* core.c in Sources */,
+				A460150325B29609004F9B26 /* Makefile in Sources */,
+				A460161F25B2960A004F9B26 /* argon2.c in Sources */,
+				A460118B25B286F0004F9B26 /* Argon2Swift.swift in Sources */,
+				A46015F725B2960A004F9B26 /* blake2b.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,12 +1258,18 @@
 		A460113B25B28539004F9B26 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = Sources/Argon2/include/;
+				LIBRARY_SEARCH_PATHS = "";
+				SWIFT_INCLUDE_PATHS = "";
 			};
 			name = Debug;
 		};
 		A460113C25B28539004F9B26 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = Sources/Argon2/include/;
+				LIBRARY_SEARCH_PATHS = "";
+				SWIFT_INCLUDE_PATHS = "";
 			};
 			name = Release;
 		};
