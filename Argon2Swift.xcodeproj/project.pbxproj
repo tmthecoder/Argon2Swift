@@ -15,6 +15,10 @@
 		A460119825B2895B004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46011A125B2896B004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46011AE25B28972004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A46011BD25B28A9E004F9B26 /* Argon2 in Resources */ = {isa = PBXBuildFile; fileRef = A46011BC25B28A9E004F9B26 /* Argon2 */; };
+		A46011BE25B28A9E004F9B26 /* Argon2 in Resources */ = {isa = PBXBuildFile; fileRef = A46011BC25B28A9E004F9B26 /* Argon2 */; };
+		A46011BF25B28A9E004F9B26 /* Argon2 in Resources */ = {isa = PBXBuildFile; fileRef = A46011BC25B28A9E004F9B26 /* Argon2 */; };
+		A46011C025B28A9E004F9B26 /* Argon2 in Resources */ = {isa = PBXBuildFile; fileRef = A46011BC25B28A9E004F9B26 /* Argon2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,7 @@
 		A460117025B286B4004F9B26 /* Argon2Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Argon2Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A460117325B286B4004F9B26 /* Info-watchOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-watchOS.plist"; sourceTree = "<group>"; };
 		A460118725B286F0004F9B26 /* Argon2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argon2.swift; sourceTree = "<group>"; };
+		A46011BC25B28A9E004F9B26 /* Argon2 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Argon2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,7 @@
 		A460117C25B286CA004F9B26 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A46011BC25B28A9E004F9B26 /* Argon2 */,
 				A460116225B2867A004F9B26 /* Argon2Swift.h */,
 				A460117325B286B4004F9B26 /* Info-watchOS.plist */,
 				A460116325B2867A004F9B26 /* Info-macOS.plist */,
@@ -256,6 +262,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46011BD25B28A9E004F9B26 /* Argon2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +270,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46011BE25B28A9E004F9B26 /* Argon2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46011BF25B28A9E004F9B26 /* Argon2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +286,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A46011C025B28A9E004F9B26 /* Argon2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
