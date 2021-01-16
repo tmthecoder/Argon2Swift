@@ -11,32 +11,36 @@ public class Argon2Swift {
     
     public init() {}
     
-    public func hashPasswordString(password: String, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) {
+    public func hashPasswordString(password: String, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) -> Argon2SwiftResult {
         guard let passData = password.data(using: .utf8) else {
             // TODO throw exception
-            return;
+            return Argon2SwiftResult(hashBytes: [], encodedBytes: []);
         }
-        hashPasswordBytes(password: passData, salt: salt, iterations: iterations, memory: memory, parallelism: parallelism, length: length, type: type, version: version)
+        return hashPasswordBytes(password: passData, salt: salt, iterations: iterations, memory: memory, parallelism: parallelism, length: length, type: type, version: version)
     }
     
-    public func hashPasswordBytes(password: Data, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) {
+    public func hashPasswordBytes(password: Data, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) -> Argon2SwiftResult {
         
-        let encodedlen = argon2_encodedlen(UInt32(iterations), UInt32(memory), UInt32(parallelism), UInt32(32), UInt32(length), Argon2_id)
+        let encodedLen = argon2_encodedlen(UInt32(iterations), UInt32(memory), UInt32(parallelism), UInt32(32), UInt32(length), Argon2_id)
         let hash = setPtr(length: length)
-        let encoded = setPtr(length: encodedlen)
+        let encoded = setPtr(length: encodedLen)
 
-        let hashVal = argon2_hash(UInt32(iterations), UInt32(memory), UInt32(parallelism), [UInt8](password), password.count, salt.bytes, salt.bytes.count, hash, length, encoded, encodedlen, getArgon2Type(type: type), UInt32(version.rawValue))
+        let hashVal = argon2_hash(UInt32(iterations), UInt32(memory), UInt32(parallelism), [UInt8](password), password.count, salt.bytes, salt.bytes.count, hash, length, encoded, encodedLen, getArgon2Type(type: type), UInt32(version.rawValue))
         
         if hashVal != 0 {
             print("Success")
         }
         
-        let hashArray = Array(arrayLiteral: hash)
-        let encodedArray = Array(arrayLiteral: encoded)
+        let hashArray = Array(UnsafeBufferPointer(start: hash, count: length))
+        let encodedArray = Array(UnsafeBufferPointer(start: encoded, count: encodedLen))
+
+        
+        let result = Argon2SwiftResult(hashBytes: hashArray, encodedBytes: encodedArray)
         
         freePtr(pointer: hash, length: length)
-        freePtr(pointer: encoded, length: encodedlen)
+        freePtr(pointer: encoded, length: encodedLen)
         
+        return result
     }
     
     public func verifyPasswordString() {
