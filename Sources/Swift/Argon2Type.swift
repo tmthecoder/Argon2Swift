@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+public enum Argon2Type: Int {
+    case i = 0
+    case d = 1
+    case id = 2
+}

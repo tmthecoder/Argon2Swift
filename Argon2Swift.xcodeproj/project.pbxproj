@@ -323,6 +323,18 @@
 		A460162125B2960A004F9B26 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
 		A460162225B2960A004F9B26 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
 		A460162325B2960A004F9B26 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
+		A460165E25B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460165D25B298A7004F9B26 /* Argon2SwiftResult.swift */; };
+		A460165F25B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460165D25B298A7004F9B26 /* Argon2SwiftResult.swift */; };
+		A460166025B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460165D25B298A7004F9B26 /* Argon2SwiftResult.swift */; };
+		A460166125B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460165D25B298A7004F9B26 /* Argon2SwiftResult.swift */; };
+		A460166725B298E1004F9B26 /* Salt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166625B298E1004F9B26 /* Salt.swift */; };
+		A460166825B298E1004F9B26 /* Salt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166625B298E1004F9B26 /* Salt.swift */; };
+		A460166925B298E1004F9B26 /* Salt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166625B298E1004F9B26 /* Salt.swift */; };
+		A460166A25B298E1004F9B26 /* Salt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166625B298E1004F9B26 /* Salt.swift */; };
+		A460167025B2995F004F9B26 /* Argon2Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166F25B2995F004F9B26 /* Argon2Type.swift */; };
+		A460167125B2995F004F9B26 /* Argon2Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166F25B2995F004F9B26 /* Argon2Type.swift */; };
+		A460167225B2995F004F9B26 /* Argon2Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166F25B2995F004F9B26 /* Argon2Type.swift */; };
+		A460167325B2995F004F9B26 /* Argon2Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166F25B2995F004F9B26 /* Argon2Type.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -414,6 +426,9 @@
 		A46014EC25B29609004F9B26 /* bench.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bench.c; sourceTree = "<group>"; };
 		A46014ED25B29609004F9B26 /* argon2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = argon2.c; sourceTree = "<group>"; };
 		A46014EE25B29609004F9B26 /* encoding.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encoding.c; sourceTree = "<group>"; };
+		A460165D25B298A7004F9B26 /* Argon2SwiftResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argon2SwiftResult.swift; sourceTree = "<group>"; };
+		A460166625B298E1004F9B26 /* Salt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salt.swift; sourceTree = "<group>"; };
+		A460166F25B2995F004F9B26 /* Argon2Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argon2Type.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -470,8 +485,8 @@
 		A460117C25B286CA004F9B26 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A460165C25B29897004F9B26 /* Swift */,
 				A460148C25B29608004F9B26 /* Argon2 */,
-				A460118725B286F0004F9B26 /* Argon2Swift.swift */,
 				A460116225B2867A004F9B26 /* Argon2Swift.h */,
 				A460117325B286B4004F9B26 /* Info-watchOS.plist */,
 				A460116325B2867A004F9B26 /* Info-macOS.plist */,
@@ -715,6 +730,17 @@
 				A46014E425B29609004F9B26 /* blake2-impl.h */,
 			);
 			path = blake2;
+			sourceTree = "<group>";
+		};
+		A460165C25B29897004F9B26 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				A460118725B286F0004F9B26 /* Argon2Swift.swift */,
+				A460165D25B298A7004F9B26 /* Argon2SwiftResult.swift */,
+				A460166625B298E1004F9B26 /* Salt.swift */,
+				A460166F25B2995F004F9B26 /* Argon2Type.swift */,
+			);
+			path = Swift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1175,16 +1201,19 @@
 				A460161825B2960A004F9B26 /* bench.c in Sources */,
 				A460150825B29609004F9B26 /* Makefile in Sources */,
 				A460162025B2960A004F9B26 /* encoding.c in Sources */,
+				A460165E25B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */,
 				A460161425B2960A004F9B26 /* test.c in Sources */,
 				A46015DC25B2960A004F9B26 /* opt.c in Sources */,
 				A46015E025B2960A004F9B26 /* thread.c in Sources */,
 				A460160025B2960A004F9B26 /* run.c in Sources */,
 				A46015FC25B2960A004F9B26 /* ref.c in Sources */,
+				A460166725B298E1004F9B26 /* Salt.swift in Sources */,
 				A460161025B2960A004F9B26 /* genkat.c in Sources */,
 				A460160825B2960A004F9B26 /* core.c in Sources */,
 				A460150025B29609004F9B26 /* Makefile in Sources */,
 				A460161C25B2960A004F9B26 /* argon2.c in Sources */,
 				A460118825B286F0004F9B26 /* Argon2Swift.swift in Sources */,
+				A460167025B2995F004F9B26 /* Argon2Type.swift in Sources */,
 				A46015F425B2960A004F9B26 /* blake2b.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1196,16 +1225,19 @@
 				A460161925B2960A004F9B26 /* bench.c in Sources */,
 				A460150925B29609004F9B26 /* Makefile in Sources */,
 				A460162125B2960A004F9B26 /* encoding.c in Sources */,
+				A460165F25B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */,
 				A460161525B2960A004F9B26 /* test.c in Sources */,
 				A46015DD25B2960A004F9B26 /* opt.c in Sources */,
 				A46015E125B2960A004F9B26 /* thread.c in Sources */,
 				A460160125B2960A004F9B26 /* run.c in Sources */,
 				A46015FD25B2960A004F9B26 /* ref.c in Sources */,
+				A460166825B298E1004F9B26 /* Salt.swift in Sources */,
 				A460161125B2960A004F9B26 /* genkat.c in Sources */,
 				A460160925B2960A004F9B26 /* core.c in Sources */,
 				A460150125B29609004F9B26 /* Makefile in Sources */,
 				A460161D25B2960A004F9B26 /* argon2.c in Sources */,
 				A460118925B286F0004F9B26 /* Argon2Swift.swift in Sources */,
+				A460167125B2995F004F9B26 /* Argon2Type.swift in Sources */,
 				A46015F525B2960A004F9B26 /* blake2b.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1217,16 +1249,19 @@
 				A460161A25B2960A004F9B26 /* bench.c in Sources */,
 				A460150A25B29609004F9B26 /* Makefile in Sources */,
 				A460162225B2960A004F9B26 /* encoding.c in Sources */,
+				A460166025B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */,
 				A460161625B2960A004F9B26 /* test.c in Sources */,
 				A46015DE25B2960A004F9B26 /* opt.c in Sources */,
 				A46015E225B2960A004F9B26 /* thread.c in Sources */,
 				A460160225B2960A004F9B26 /* run.c in Sources */,
 				A46015FE25B2960A004F9B26 /* ref.c in Sources */,
+				A460166925B298E1004F9B26 /* Salt.swift in Sources */,
 				A460161225B2960A004F9B26 /* genkat.c in Sources */,
 				A460160A25B2960A004F9B26 /* core.c in Sources */,
 				A460150225B29609004F9B26 /* Makefile in Sources */,
 				A460161E25B2960A004F9B26 /* argon2.c in Sources */,
 				A460118A25B286F0004F9B26 /* Argon2Swift.swift in Sources */,
+				A460167225B2995F004F9B26 /* Argon2Type.swift in Sources */,
 				A46015F625B2960A004F9B26 /* blake2b.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1238,16 +1273,19 @@
 				A460161B25B2960A004F9B26 /* bench.c in Sources */,
 				A460150B25B29609004F9B26 /* Makefile in Sources */,
 				A460162325B2960A004F9B26 /* encoding.c in Sources */,
+				A460166125B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */,
 				A460161725B2960A004F9B26 /* test.c in Sources */,
 				A46015DF25B2960A004F9B26 /* opt.c in Sources */,
 				A46015E325B2960A004F9B26 /* thread.c in Sources */,
 				A460160325B2960A004F9B26 /* run.c in Sources */,
 				A46015FF25B2960A004F9B26 /* ref.c in Sources */,
+				A460166A25B298E1004F9B26 /* Salt.swift in Sources */,
 				A460161325B2960A004F9B26 /* genkat.c in Sources */,
 				A460160B25B2960A004F9B26 /* core.c in Sources */,
 				A460150325B29609004F9B26 /* Makefile in Sources */,
 				A460161F25B2960A004F9B26 /* argon2.c in Sources */,
 				A460118B25B286F0004F9B26 /* Argon2Swift.swift in Sources */,
+				A460167325B2995F004F9B26 /* Argon2Type.swift in Sources */,
 				A46015F725B2960A004F9B26 /* blake2b.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

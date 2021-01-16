@@ -6,3 +6,7 @@
 //
 
 import Foundation
+
+public class Argon2SwiftResult {
+    
+}

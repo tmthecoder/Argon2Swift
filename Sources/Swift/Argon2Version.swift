@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+public enum Argon2Version: Int {
+    case V13 = 0x13
+    case V10 = 0x10
+}
