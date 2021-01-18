@@ -74,7 +74,7 @@ public class Argon2Swift {
         let encoded = setPtr(length: encodedLen)
 
         // Perform the actual hash operation
-        let errorCode = argon2_hash(UInt32(iterations), UInt32(memory), UInt32(parallelism), [UInt8](password), password.count, salt.bytes, salt.bytes.count, hash, length, encoded, encodedLen, getArgon2Type(type: type), UInt32(version.rawValue))
+        let errorCode = argon2_hash(UInt32(iterations), UInt32(memory), UInt32(parallelism), [UInt8](password), password.count, [UInt8](salt.bytes), salt.bytes.count, hash, length, encoded, encodedLen, getArgon2Type(type: type), UInt32(version.rawValue))
         
         // Check if there were any errors
         if errorCode != Argon2SwiftErrorCode.ARGON2_OK.rawValue {

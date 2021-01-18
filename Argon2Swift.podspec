@@ -82,8 +82,8 @@ Pod::Spec.new do |spec|
     'Sources/Argon2/src/blake2/blake2-impl.h',
     'Sources/Argon2/include/**/*.h'
   spec.osx.source_files =
-    'Sources/Argon2/src/opt.c',
-    'Sources/Argon2/src/blake2/blamka-round-opt.h'
+    'Sources/Argon2/src/ref.c',
+    'Sources/Argon2/src/blake2/blamka-round-ref.h'
   spec.ios.source_files =
     'Sources/Argon2/src/ref.c',
     'Sources/Argon2/src/blake2/blamka-round-ref.h'

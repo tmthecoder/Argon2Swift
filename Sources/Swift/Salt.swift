@@ -11,7 +11,7 @@ import Security
 public class Salt {
     
     /// The byte-array that the salt class wraps around
-    let bytes: [UInt8]
+    let bytes: Data
     
     /**
      Initializes a new `Salt` object with the provided byte array
@@ -19,7 +19,7 @@ public class Salt {
      - Parameter bytes: The byte array to pass to the Salt object
      - Returns: A Salt object containing the byte array
      */
-    public init(bytes: [UInt8]) {
+    public init(bytes: Data) {
         self.bytes = bytes
     }
     
@@ -39,6 +39,6 @@ public class Salt {
             fatalError("SecRandomCopyBytes failed with error code: \(status)")
         }
         // Return the salt
-        return Salt(bytes: bytes)
+        return Salt(bytes: Data(bytes))
     }
 }
