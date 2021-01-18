@@ -14,7 +14,7 @@ public class Salt {
     let bytes: [UInt8]
     
     /**
-     Initializes a new Salt object with the provided byte array
+     Initializes a new `Salt` object with the provided byte array
       
      - Parameter bytes: The byte array to pass to the Salt object
      - Returns: A Salt object containing the byte array
@@ -24,10 +24,10 @@ public class Salt {
     }
     
     /**
-     Initialized a new Salt object with a cryptographically secure random byte array
+     Initialized a new `Salt` object with a cryptographically secure random byte array
      
      - Parameter length: An optional parameter to set the length the salt should be (set to 16 bytes by default)
-     - Returns: A Salt object containing a random byte array of the specified length
+     - Returns: A `Salt` object containing a random byte array of the specified length
      */
     public static func newSalt(length: Int = 16) -> Salt {
         // Set a byte array
