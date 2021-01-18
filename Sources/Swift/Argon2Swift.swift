@@ -7,6 +7,18 @@
 import Foundation
 
 /// Main class to handle all Argon2 hashing and verification
+/// ### Usage Example ###
+///
+///  - Hash the password: "Password12"
+///
+///    ````
+///    let hashResult = try! Argon2Swift.hashPasswordString(password: "Password12", salt: Salt.newSalt())
+///    let hashData = hashResult.hashData()
+///    let base64Hash = hashResult.base64String()
+///    let hexHash = hashResult.hexString()
+///    let encodedData = hashResult.encodedData()
+///    let encodedString = hashResult.encodedString()
+///    ````
 public class Argon2Swift {
         
     /**
