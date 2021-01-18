@@ -86,4 +86,8 @@ Pod::Spec.new do |spec|
 
   spec.public_header_files = 'Sources/Argon2/include/**/*.h'
 
+  spec.test_spec 'Tests' do |test_spec|
+    test_spec.source_files = 'Tests/**/*.swift'
+  end
+
 end

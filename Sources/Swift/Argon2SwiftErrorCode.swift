@@ -7,7 +7,7 @@
 import Foundation
 
 /// An enum to manage the argon2  error codes, almost exacly synchronous with the error codes given from the actual Argon2 C reference library with the addition of Unknown error in case
-enum Argon2SwiftErrorCode: Int32 {
+public enum Argon2SwiftErrorCode: Int32 {
     case ARGON2_OK = 0 /// No error
 
     case ARGON2_OUTPUT_PTR_NULL = -1 /// Outpointer null
