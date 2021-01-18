@@ -63,9 +63,9 @@ Pod::Spec.new do |spec|
   #
 
   spec.ios.deployment_target = "9.0"
-  spec.osx.deployment_target = "10.11"
-  spec.watchos.deployment_target = "5.0"
-  spec.tvos.deployment_target = "12.0"
+  spec.osx.deployment_target = "10.9"
+  spec.watchos.deployment_target = "2.0"
+  spec.tvos.deployment_target = "9.0"
 
   spec.preserve_paths = 'Sources/Argon2', 'Sources/Argon2/include/**/*.h'
 
@@ -88,6 +88,10 @@ Pod::Spec.new do |spec|
 
   spec.test_spec 'Tests' do |test_spec|
     test_spec.source_files = 'Tests/**/*.swift'
+    test_spec.platform = :ios, :osx, :tvos
+    test_spec.ios.deployment_target = "9.0"
+    test_spec.osx.deployment_target = "10.9"
+    test_spec.tvos.deployment_target = "9.0"
   end
 
 end

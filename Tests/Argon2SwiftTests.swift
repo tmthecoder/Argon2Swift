@@ -57,7 +57,7 @@ class Argon2SwiftTests: XCTestCase {
         - encodedHash: The expected encoded hash the operation will yield
      */
     func hashTest(version: Argon2Version, iterations: Int, memory: Int, parallelism: Int, password: String, salt: String, hexHash: String, encodedHash: String, type: Argon2Type) -> Argon2SwiftErrorCode {
-        let s = Salt(Data(salt.utf8))
+        let s = Salt(bytes: Data(salt.utf8))
         var resultString : Argon2SwiftResult
         var resultBytes : Argon2SwiftResult
         // Perform the hash
@@ -66,7 +66,7 @@ class Argon2SwiftTests: XCTestCase {
             resultBytes = try Argon2Swift.hashPasswordBytes(password: Data(password.utf8), salt: s, iterations: iterations, memory: memory, parallelism: parallelism, type: type, version: version)
         } catch {
             // Return error
-            return (error as? Argon2SwiftException)?.errorCode
+            return (error as? Argon2SwiftException)?.errorCode ?? Argon2SwiftErrorCode.ARGON2_UNKNOWN_ERROR
         }
         
         // Check for equality between both hashes
@@ -80,13 +80,24 @@ class Argon2SwiftTests: XCTestCase {
         }
         
         // Check if verification of both methods match
-        if (!Argon2Swift.verifyHashString(password: password, hash: encodedHash, type: type) || !Argon2Swift.verifyHashBytes(password: Data(password.utf8), hash: Data(encodedHash.utf8), type: type)) {
-            return Argon2SwiftErrorCode.ARGON2_UNKNOWN_ERROR
+        do {
+            let verificationString = try Argon2Swift.verifyHashString(password: password, hash: encodedHash, type: type)
+            let verificationBytes = try Argon2Swift.verifyHashBytes(password: Data(password.utf8), hash: Data(encodedHash.utf8), type: type)
+            if !verificationString || !verificationBytes {
+                return Argon2SwiftErrorCode.ARGON2_UNKNOWN_ERROR
+            }
+        } catch {
+            return (error as? Argon2SwiftException)?.errorCode ?? Argon2SwiftErrorCode.ARGON2_UNKNOWN_ERROR
         }
-        
         // Check if they verify against each other
-        if (!Argon2Swift.verifyHashString(password: password, hash: resultBytes.encodedString(), type: type) || !Argon2Swift.verifyHashString(password: password, hash: resultString.encodedString(), type: type)) {
-            return Argon2SwiftErrorCode.ARGON2_UNKNOWN_ERROR
+        do {
+            let verificationByteHash = try Argon2Swift.verifyHashString(password: password, hash: resultBytes.encodedString(), type: type)
+            let verificationStringHash = try Argon2Swift.verifyHashString(password: password, hash: resultString.encodedString(), type: type)
+            if !verificationByteHash || !verificationStringHash {
+                return Argon2SwiftErrorCode.ARGON2_UNKNOWN_ERROR
+            }
+        } catch {
+            return (error as? Argon2SwiftException)?.errorCode ?? Argon2SwiftErrorCode.ARGON2_UNKNOWN_ERROR
         }
         
         // All verified

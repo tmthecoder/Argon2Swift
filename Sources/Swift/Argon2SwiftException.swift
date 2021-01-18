@@ -7,12 +7,12 @@
 import Foundation
 
 /// An exception to handle any `Argon2` related hashing and/or verification errors
-struct Argon2SwiftException: Error {
+public struct Argon2SwiftException: Error {
     
     /// The error message
-    let message: String
+    public let message: String
     /// The error code
-    let errorCode: Argon2SwiftErrorCode
+    public let errorCode: Argon2SwiftErrorCode
 
     /**
      Creates a throwable error object with the given code and message
