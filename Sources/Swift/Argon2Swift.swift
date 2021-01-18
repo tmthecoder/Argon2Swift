@@ -7,9 +7,7 @@
 import Foundation
 
 public class Argon2Swift {
-    
-    public init() {}
-    
+        
     public func hashPasswordString(password: String, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
         // Convert the password to a data type by utilizing utf8
         guard let passData = password.data(using: .utf8) else {

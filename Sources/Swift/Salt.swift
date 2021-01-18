@@ -7,14 +7,28 @@
 import Foundation
 import Security
 
+/// A class to wrap around Salts in argon2. allowing cryptographically secure generation of salts as well as utilization of premade salts
 public class Salt {
     
+    /// The byte-array that the salt class wraps around
     let bytes: [UInt8]
     
+    /**
+     Initializes a new Salt object with the provided byte array
+      
+     - Parameter bytes: The byte array to pass to the Salt object
+     - Returns: A Salt object containing the byte array
+     */
     public init(bytes: [UInt8]) {
         self.bytes = bytes
     }
     
+    /**
+     Initialized a new Salt object with a cryptographically secure random byte array
+     
+     - Parameter length: An optional parameter to set the length the salt should be (set to 16 bytes by default)
+     - Returns: A Salt object containing a random byte array of the specified length
+     */
     public static func newSalt(length: Int = 16) -> Salt {
         // Set a byte array
         var bytes = [UInt8](repeating: 0, count: length)
