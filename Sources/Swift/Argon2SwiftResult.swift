@@ -6,34 +6,70 @@
 
 import Foundation
 
+/// A wrapper class containing the result of a hash operation performed with Argon2, allowing for ease conversion of the byte array as well as raw access
 public class Argon2SwiftResult {
     
-    // Both hashed calues
+    /// The byte array of solely the hashed result
     let hashBytes: [UInt8]
+    /// The byte array of the encoded result, containing the hash, version, salt, and Argon2 params
     let encodedBytes: [UInt8]
     
+    /**
+     Initialized a new Argon2SwiftResult object with a given encoded byte array and hash byte array
+     
+     - Parameters:
+        - hashBytes: The byte array of the hashed password
+        - encodedBytes: The byte array of the encoded result
+     
+     - Returns: An Argon2SwiftResult object containing the result of the hashing operation performed
+     */
     public init(hashBytes: [Int8], encodedBytes: [Int8]) {
         // Convert to UInt8 arrays and set
         self.hashBytes = hashBytes.map { UInt8(bitPattern: $0) }
         self.encodedBytes = encodedBytes.map{ UInt8(bitPattern: $0) }
     }
     
+    /**
+     A method to return the hash as a Data object
+     
+     - Returns: The computed hash as a Data object
+     */
     public func hashData() -> Data {
         return Data(hashBytes);
     }
     
+    /**
+     A method to return the encoded hash as a Data obkecy
+     
+     - Returns: The encoded hash from the computation as a Data object
+     */
     public func encodedData() -> Data {
         return Data(encodedBytes);
     }
     
+    /**
+     A method to return the hash as a base64-encoded String
+     
+     - Returns: The hash encoded to base64
+     */
     public func base64String() -> String {
         return Data(hashBytes).base64EncodedString()
     }
     
+    /**
+     A method to return the hash as a hex-encoded string
+     
+     - Returns: The hash encoded to hex
+     */
     public func hexString() -> String {
         return hashBytes.map{ String(format: "%02hhx", $0) }.joined()
     }
     
+    /**
+     A method to return the encoded computation in its string form
+     
+     - Returns: The encoded computation with all information as a readable String
+     */
     public func encodedString() -> String? {
         return String(data: Data(encodedBytes), encoding: .utf8)
     }
