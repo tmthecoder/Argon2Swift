@@ -23,7 +23,7 @@ public class Salt {
         let status = SecRandomCopyBytes(kSecRandomDefault, bytes.count, &bytes)
         // Ensure the copy was a success
         if status != errSecSuccess {
-            
+            fatalError("SecRandomCopyBytes failed with error code: \(status)")
         }
         // Return the salt
         return Salt(bytes: bytes)

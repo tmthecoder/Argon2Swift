@@ -11,17 +11,17 @@ public class Argon2Swift {
     
     public init() {}
     
-    public func hashPasswordString(password: String, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) -> Argon2SwiftResult {
+    public func hashPasswordString(password: String, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
         // Convert the password to a data type by utilizing utf8
         guard let passData = password.data(using: .utf8) else {
             // TODO throw exception
             return Argon2SwiftResult(hashBytes: [], encodedBytes: []);
         }
         // Perform the hash with the hashPasswordBytes method with the converted password
-        return hashPasswordBytes(password: passData, salt: salt, iterations: iterations, memory: memory, parallelism: parallelism, length: length, type: type, version: version)
+        return try hashPasswordBytes(password: passData, salt: salt, iterations: iterations, memory: memory, parallelism: parallelism, length: length, type: type, version: version)
     }
     
-    public func hashPasswordBytes(password: Data, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) -> Argon2SwiftResult {
+    public func hashPasswordBytes(password: Data, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
         
         // get length of encoded result
         let encodedLen = argon2_encodedlen(UInt32(iterations), UInt32(memory), UInt32(parallelism), UInt32(32), UInt32(length), Argon2_id)
@@ -30,11 +30,12 @@ public class Argon2Swift {
         let encoded = setPtr(length: encodedLen)
 
         // Perform the actual hash operation
-        let hashVal = argon2_hash(UInt32(iterations), UInt32(memory), UInt32(parallelism), [UInt8](password), password.count, salt.bytes, salt.bytes.count, hash, length, encoded, encodedLen, getArgon2Type(type: type), UInt32(version.rawValue))
+        let errorCode = argon2_hash(UInt32(iterations), UInt32(memory), UInt32(parallelism), [UInt8](password), password.count, salt.bytes, salt.bytes.count, hash, length, encoded, encodedLen, getArgon2Type(type: type), UInt32(version.rawValue))
         
         // Check if there were any errors
-        if hashVal != 0 {
-            print("Success")
+        if errorCode != Argon2SwiftErrorCode.ARGON2_OK.rawValue {
+            let errorMsg = String(cString: argon2_error_message(errorCode))
+            throw Argon2SwiftException(errorMsg, errorCode: Argon2SwiftErrorCode(rawValue: errorCode) ?? Argon2SwiftErrorCode.ARGON2_UNKNOWN_ERROR)
         }
         
         // Create copy arrays for the hash and encoded results
@@ -52,12 +53,29 @@ public class Argon2Swift {
         return result
     }
     
-    public func verifyPasswordString() {
-        
+    public func verifyPasswordString(password: String, encoded: String, type: Argon2Type) throws -> Bool {
+        // Convert the password to a data type by utilizing utf8
+        guard let passData = password.data(using: .utf8) else {
+            return false
+        }
+        // Convert the encoded to a data type by utilizing utf8
+        guard let encodedData = encoded.data(using: .utf8) else {
+            return false
+        }
+        return try verifyPasswordBytes(password: passData, encoded: encodedData, type: type)
     }
     
-    public func verifyPasswordBytes() {
-        
+    public func verifyPasswordBytes(password: Data, encoded: Data, type: Argon2Type) throws -> Bool {
+        // Convert encoded to a c string
+        let encodedStr = String(data: encoded, encoding: .utf8)?.cString(using: .utf8)
+        // Get the verified result
+        let result = argon2_verify(encodedStr, [UInt8](password), password.count, getArgon2Type(type: type))
+        if result != Argon2SwiftErrorCode.ARGON2_OK.rawValue {
+            let errorMsg = String(cString: argon2_error_message(result))
+            throw Argon2SwiftException(errorMsg, errorCode: Argon2SwiftErrorCode(rawValue: result) ?? Argon2SwiftErrorCode.ARGON2_UNKNOWN_ERROR)
+        }
+        // Return if it's verified or not
+        return result == 0
     }
 
     
