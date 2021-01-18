@@ -6,8 +6,26 @@
 
 import Foundation
 
+/// Main class to handle all Argon2 hashing and verification
 public class Argon2Swift {
         
+    /**
+     Hashes a given `String` password with Argon2 utilizing the given salt as well as optionally the specific parameters of the hashing operation itself
+     
+     - Parameters:
+        - password: The `String` password to hash (utf-8 encoded)
+        - salt: The `Salt ` to use with Argon2 as the salt in the hashing operation
+        - iterations: The amount of iterations that the algorithm should perform (optional parameter, defaults to 32)
+        - memory: The amount of memory the hashing operation can use at a maximum (optional parameter, defaults to 256)
+        - parallelism: The factor of parallelism when comouting the hash (optional parameter, defaults to 2)
+        - length: The length of the final hash (optional parameter, defaults to 32)
+        - type: The specific type of Argon2 to use, either`i`, `d`, or `id` (optional parameter, defaults to `.i`)
+        - version: The version of Argon2 to use in the hashing computation, either `V10` or `V13` (optional parameter, defaults to `.V13`)
+     
+     - Throws: `Argon2SwiftException` if the hashing fails in any manner
+     
+     - Returns: An `Argon2SwiftResult` containing the hash, encoding, and convenience methods to access the hash and encoded results in various forms
+     */
     public func hashPasswordString(password: String, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
         // Convert the password to a data type by utilizing utf8
         guard let passData = password.data(using: .utf8) else {
@@ -18,6 +36,23 @@ public class Argon2Swift {
         return try hashPasswordBytes(password: passData, salt: salt, iterations: iterations, memory: memory, parallelism: parallelism, length: length, type: type, version: version)
     }
     
+    /**
+     Hashes a given `Data` password with Argon2 utilizing the given salt as well as optionally the specific parameters of the hashing operation itself
+     
+     - Parameters:
+        - password: The `Data` password to hash
+        - salt: The `Salt ` to use with Argon2 as the salt in the hashing operation
+        - iterations: The amount of iterations that the algorithm should perform (optional parameter, defaults to 32)
+        - memory: The amount of memory the hashing operation can use at a maximum (optional parameter, defaults to 256)
+        - parallelism: The factor of parallelism when comouting the hash (optional parameter, defaults to 2)
+        - length: The length of the final hash (optional parameter, defaults to 32)
+        - type: The specific type of Argon2 to use, either`i`, `d`, or `id` (optional parameter, defaults to `.i`)
+        - version: The version of Argon2 to use in the hashing computation, either `V10` or `V13` (optional parameter, defaults to `.V13`)
+     
+     - Throws: `Argon2SwiftException` if the hashing fails in any manner
+     
+     - Returns: An `Argon2SwiftResult` containing the hash, encoding, and convenience methods to access the hash and encoded results in various forms
+     */
     public func hashPasswordBytes(password: Data, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
         
         // get length of encoded result
@@ -50,7 +85,19 @@ public class Argon2Swift {
         return result
     }
     
-    public func verifyPasswordString(password: String, encoded: String, type: Argon2Type) throws -> Bool {
+    /**
+     Verifies a `String` password with the given encoded `String`, returning `true` on successful verifications and `false` on incorrect ones.
+     
+     - Parameters:
+        - password: The `String` password to verify and check (utf-8 encoded)
+        - encoded: The `String` encoded Argon2 value to check the password against (utf-8 encoded)
+        - type: The specific type of Argon2 to use, either `i`, `d`, or `id` (optional parameter, defaults to `.i`)
+     
+     - Throws: `Argon2SwiftException` if the verification fails in any manner
+     
+     - Returns: A `Bool` signifying whether the password is equivalent to the hash or not
+     */
+    public func verifyPasswordString(password: String, encoded: String, type: Argon2Type = .i) throws -> Bool {
         // Convert the password to a data type by utilizing utf8
         guard let passData = password.data(using: .utf8) else {
             return false
@@ -62,12 +109,24 @@ public class Argon2Swift {
         return try verifyPasswordBytes(password: passData, encoded: encodedData, type: type)
     }
     
-    public func verifyPasswordBytes(password: Data, encoded: Data, type: Argon2Type) throws -> Bool {
+    /**
+     Verifies a `Data` password with the given encoded `Data`, returning `true` on successful verifications and `false` on incorrect ones.
+     
+     - Parameters:
+        - password: The `Data` password to verify and check
+        - encoded: The `Data` encoded Argon2 value to check the password against
+        - type: The specific type of Argon2 to use, either `i`, `d`, or `id` (optional parameter, defaults to `.i`)
+     
+     - Throws: `Argon2SwiftException` if the verification fails in any manner
+     
+     - Returns: A `Bool` signifying whether the password is equivalent to the hash or not
+     */
+    public func verifyPasswordBytes(password: Data, encoded: Data, type: Argon2Type = .i) throws -> Bool {
         // Convert encoded to a c string
         let encodedStr = String(data: encoded, encoding: .utf8)?.cString(using: .utf8)
         // Get the verified result
         let result = argon2_verify(encodedStr, [UInt8](password), password.count, getArgon2Type(type: type))
-        if result != Argon2SwiftErrorCode.ARGON2_OK.rawValue {
+        if result != Argon2SwiftErrorCode.ARGON2_OK.rawValue && result != Argon2SwiftErrorCode.ARGON2_VERIFY_MISMATCH.rawValue {
             let errorMsg = String(cString: argon2_error_message(result))
             throw Argon2SwiftException(errorMsg, errorCode: Argon2SwiftErrorCode(rawValue: result) ?? Argon2SwiftErrorCode.ARGON2_UNKNOWN_ERROR)
         }
@@ -75,7 +134,13 @@ public class Argon2Swift {
         return result == 0
     }
 
-    
+    /**
+     A method to map the `Argon2Type` Swift enum to the `Argon2_type` C struct in the reference library
+     
+     - Parameter type: The `Argon2Type` to get the equivalent `Argon2_type` for
+     
+     - Returns: An `Argon2_type` object to use in the C argon2 methods
+     */
     func getArgon2Type(type: Argon2Type) -> Argon2_type {
         // Check what type was supplied and return the corresponding Argon2_type object
         var argonType = Argon2_i
@@ -88,12 +153,25 @@ public class Argon2Swift {
         return argonType
     }
     
-    
+    /**
+     A method to set an `[Int8]` mutable pointer that the C methods will modify with results
+     
+     - Parameter length: The length of the pointer to allocate
+     
+     - Returns: An allocated `UnsafeMutablePointer<Int8>` with the given length
+     */
     func setPtr(length: Int) -> UnsafeMutablePointer<Int8> {
         // Create and allocate a pointer with the given length
         return UnsafeMutablePointer<Int8>.allocate(capacity: length)
     }
     
+    /**
+     A method to deinitialize and deallocate an `Int8` mutable pointer that has been already allocated
+     
+     - Parameters:
+        - pointer: The  `UnsafeMutablePointer<Int8>` to deinitialize and free
+        - length: The length of the given pointer
+     */
     func freePtr(pointer: UnsafeMutablePointer<Int8>, length: Int) {
         // Deinitialize and deallocate a pointer of the given length
         pointer.deinitialize(count: length)

@@ -15,7 +15,7 @@ public class Argon2SwiftResult {
     let encodedBytes: [UInt8]
     
     /**
-     Initialized a new `Argon2SwiftResult` object with a given encoded byte array and hash byte array
+     Initializes a new `Argon2SwiftResult` object with a given encoded byte array and hash byte array
      
      - Parameters:
         - hashBytes: The byte array of the hashed password
