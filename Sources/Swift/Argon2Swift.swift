@@ -26,7 +26,7 @@ public class Argon2Swift {
      
      - Returns: An `Argon2SwiftResult` containing the hash, encoding, and convenience methods to access the hash and encoded results in various forms
      */
-    public func hashPasswordString(password: String, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
+    public static func hashPasswordString(password: String, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
         // Convert the password to a data type by utilizing utf8
         guard let passData = password.data(using: .utf8) else {
             // TODO throw exception
@@ -53,7 +53,7 @@ public class Argon2Swift {
      
      - Returns: An `Argon2SwiftResult` containing the hash, encoding, and convenience methods to access the hash and encoded results in various forms
      */
-    public func hashPasswordBytes(password: Data, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
+    public static func hashPasswordBytes(password: Data, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
         
         // get length of encoded result
         let encodedLen = argon2_encodedlen(UInt32(iterations), UInt32(memory), UInt32(parallelism), UInt32(32), UInt32(length), Argon2_id)
@@ -97,7 +97,7 @@ public class Argon2Swift {
      
      - Returns: A `Bool` signifying whether the password is equivalent to the hash or not
      */
-    public func verifyPasswordString(password: String, encoded: String, type: Argon2Type = .i) throws -> Bool {
+    public static func verifyPasswordString(password: String, encoded: String, type: Argon2Type = .i) throws -> Bool {
         // Convert the password to a data type by utilizing utf8
         guard let passData = password.data(using: .utf8) else {
             return false
@@ -121,7 +121,7 @@ public class Argon2Swift {
      
      - Returns: A `Bool` signifying whether the password is equivalent to the hash or not
      */
-    public func verifyPasswordBytes(password: Data, encoded: Data, type: Argon2Type = .i) throws -> Bool {
+    public static func verifyPasswordBytes(password: Data, encoded: Data, type: Argon2Type = .i) throws -> Bool {
         // Convert encoded to a c string
         let encodedStr = String(data: encoded, encoding: .utf8)?.cString(using: .utf8)
         // Get the verified result
@@ -141,7 +141,7 @@ public class Argon2Swift {
      
      - Returns: An `Argon2_type` object to use in the C argon2 methods
      */
-    func getArgon2Type(type: Argon2Type) -> Argon2_type {
+    static func getArgon2Type(type: Argon2Type) -> Argon2_type {
         // Check what type was supplied and return the corresponding Argon2_type object
         var argonType = Argon2_i
         if (type == .d) {
@@ -160,7 +160,7 @@ public class Argon2Swift {
      
      - Returns: An allocated `UnsafeMutablePointer<Int8>` with the given length
      */
-    func setPtr(length: Int) -> UnsafeMutablePointer<Int8> {
+    static func setPtr(length: Int) -> UnsafeMutablePointer<Int8> {
         // Create and allocate a pointer with the given length
         return UnsafeMutablePointer<Int8>.allocate(capacity: length)
     }
@@ -172,7 +172,7 @@ public class Argon2Swift {
         - pointer: The  `UnsafeMutablePointer<Int8>` to deinitialize and free
         - length: The length of the given pointer
      */
-    func freePtr(pointer: UnsafeMutablePointer<Int8>, length: Int) {
+    static func freePtr(pointer: UnsafeMutablePointer<Int8>, length: Int) {
         // Deinitialize and deallocate a pointer of the given length
         pointer.deinitialize(count: length)
         pointer.deallocate()
