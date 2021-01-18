@@ -104,16 +104,8 @@ public class Argon2Swift {
      
      - Returns: A `Bool` signifying whether the password is equivalent to the hash or not
      */
-    public static func verifyPasswordString(password: String, encoded: String, type: Argon2Type = .i) throws -> Bool {
-        // Convert the password to a data type by utilizing utf8
-        guard let passData = password.data(using: .utf8) else {
-            return false
-        }
-        // Convert the encoded to a data type by utilizing utf8
-        guard let encodedData = encoded.data(using: .utf8) else {
-            return false
-        }
-        return try verifyPasswordBytes(password: passData, encoded: encodedData, type: type)
+    public static func verifyHashString(password: String, hash: String, type: Argon2Type = .i) throws -> Bool {
+        return try verifyHashBytes(password: Data(password.utf8), hash: Data(hash.utf8), type: type)
     }
     
     /**
@@ -128,9 +120,9 @@ public class Argon2Swift {
      
      - Returns: A `Bool` signifying whether the password is equivalent to the hash or not
      */
-    public static func verifyPasswordBytes(password: Data, encoded: Data, type: Argon2Type = .i) throws -> Bool {
+    public static func verifyHashBytes(password: Data, hash: Data, type: Argon2Type = .i) throws -> Bool {
         // Convert encoded to a c string
-        let encodedStr = String(data: encoded, encoding: .utf8)?.cString(using: .utf8)
+        let encodedStr = String(data: hash, encoding: .utf8)?.cString(using: .utf8)
         // Get the verified result
         let result = argon2_verify(encodedStr, [UInt8](password), password.count, getArgon2Type(type: type))
         if result != Argon2SwiftErrorCode.ARGON2_OK.rawValue && result != Argon2SwiftErrorCode.ARGON2_VERIFY_MISMATCH.rawValue {
