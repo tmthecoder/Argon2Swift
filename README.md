@@ -25,7 +25,7 @@ import Argon2Swift
 let password = "password"
 let s = Salt.newSalt()
 //Hash with pre-set params (iterations: 32, memory: 256, parallelism: 2, length: 32, type: Argon2Type.i, version: Argon2Version.V13)
-let result = Argon2Swift.hashPasswordString(password: password, salt: s)
+let result = try! Argon2Swift.hashPasswordString(password: password, salt: s)
 
 //Raw hash values available as int list, base 64 string, and hex string
 let hashData = result.hashData()
@@ -37,7 +37,7 @@ let encodedData = result.encodedData()
 let encodedString = result.encodedString()
 
 //Verify password (returns true/false), uses default type (Argon2Type.i)
-let verified = Argon2Swift.verifyHashString(password: password, hash: stringEncoded);
+let verified = try! Argon2Swift.verifyHashString(password: password, hash: stringEncoded);
 ```
 
 ## Features and bugs
