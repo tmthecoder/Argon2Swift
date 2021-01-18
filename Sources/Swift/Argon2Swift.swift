@@ -39,13 +39,8 @@ public class Argon2Swift {
      - Returns: An `Argon2SwiftResult` containing the hash, encoding, and convenience methods to access the hash and encoded results in various forms
      */
     public static func hashPasswordString(password: String, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
-        // Convert the password to a data type by utilizing utf8
-        guard let passData = password.data(using: .utf8) else {
-            // TODO throw exception
-            return Argon2SwiftResult(hashBytes: [], encodedBytes: []);
-        }
         // Perform the hash with the hashPasswordBytes method with the converted password
-        return try hashPasswordBytes(password: passData, salt: salt, iterations: iterations, memory: memory, parallelism: parallelism, length: length, type: type, version: version)
+        return try hashPasswordBytes(password: Data(password.utf8), salt: salt, iterations: iterations, memory: memory, parallelism: parallelism, length: length, type: type, version: version)
     }
     
     /**
@@ -68,7 +63,7 @@ public class Argon2Swift {
     public static func hashPasswordBytes(password: Data, salt: Salt, iterations: Int = 32, memory: Int = 256, parallelism: Int = 2, length: Int = 32, type: Argon2Type = .i, version: Argon2Version = .V13) throws -> Argon2SwiftResult {
         
         // get length of encoded result
-        let encodedLen = argon2_encodedlen(UInt32(iterations), UInt32(memory), UInt32(parallelism), UInt32(32), UInt32(length), Argon2_id)
+        let encodedLen = argon2_encodedlen(UInt32(iterations), UInt32(memory), UInt32(parallelism), UInt32(salt.bytes.count), UInt32(length), getArgon2Type(type: type))
         // Allocate a pointer for the hash and the encoded hash
         let hash = setPtr(length: length)
         let encoded = setPtr(length: encodedLen)

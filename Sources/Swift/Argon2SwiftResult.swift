@@ -70,7 +70,7 @@ public class Argon2SwiftResult {
      
      - Returns: The encoded computation with all information as a readable `String`
      */
-    public func encodedString() -> String? {
-        return String(data: Data(encodedBytes), encoding: .utf8)
+    public func encodedString() -> String {
+        return String(data: Data(encodedBytes), encoding: .utf8)!
     }
 }
