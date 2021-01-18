@@ -54,7 +54,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source           = { git: "https://github.com/signalapp/Argon2.git", :tag => spec.version, submodules: true }
+  spec.source           = { git: "https://github.com/tmthecoder/Argon2Swift.git", :tag => spec.version, submodules: true }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
