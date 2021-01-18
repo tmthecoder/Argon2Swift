@@ -6,15 +6,33 @@
 
 import Foundation
 
+/// An exception to handle any `Argon2` related hashing and/or verification errors
 struct Argon2SwiftException: Error {
+    
+    /// The error message
     let message: String
+    /// The error code
     let errorCode: Argon2SwiftErrorCode
 
+    /**
+     Creates a throwable error object with the given code and message
+     
+     - Parameters:
+        - message: The detailed error message
+        - errorCode: The shorthand error code
+     
+     - Returns: An `Argon2SwiftException` object with the given error code and message
+     */
     init(_ message: String, errorCode: Argon2SwiftErrorCode) {
         self.errorCode = errorCode
         self.message = message
     }
 
+    /**
+     A getter for the error's localized description
+     
+     - Returns: A `String` with the error code and message
+     */
     public var localizedDescription: String {
         return "[\(errorCode)] \(message)"
     }

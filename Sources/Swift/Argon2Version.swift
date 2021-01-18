@@ -6,7 +6,10 @@
 
 import Foundation
 
+/// An enum to wrap around the Argon2 Version used in the hashing operation, which can be either `V13` or `V10`
 public enum Argon2Version: Int {
+    /// Hash using Argon2  `V13`
     case V13 = 0x13
+    /// Hash using Argon2 `V10`
     case V10 = 0x10
 }

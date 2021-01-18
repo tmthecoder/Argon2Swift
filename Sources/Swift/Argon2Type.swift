@@ -6,9 +6,12 @@
 
 import Foundation
 
-/// An enum to select the Argon2 type used to hash, contains 3 modes
+/// An enum to select the Argon2 type used to hash, contains 3 modes: `i`, `d`, and `id`, each signifying their corresponding Argon2 type
 public enum Argon2Type: Int {
+    /// Hash with `Argon2i`
     case i = 0
+    /// Hash with `Argon2d`
     case d = 1
+    /// Hash with `Argon2id`
     case id = 2
 }
