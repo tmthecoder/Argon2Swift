@@ -80,17 +80,7 @@ Pod::Spec.new do |spec|
     'Sources/Argon2/src/blake2/blake2.h',
     'Sources/Argon2/src/blake2/blake2b.c',
     'Sources/Argon2/src/blake2/blake2-impl.h',
-    'Sources/Argon2/include/**/*.h'
-  spec.osx.source_files =
-    'Sources/Argon2/src/ref.c',
-    'Sources/Argon2/src/blake2/blamka-round-ref.h'
-  spec.ios.source_files =
-    'Sources/Argon2/src/ref.c',
-    'Sources/Argon2/src/blake2/blamka-round-ref.h'
-  spec.tvos.source_files =
-    'Sources/Argon2/src/ref.c',
-    'Sources/Argon2/src/blake2/blamka-round-ref.h'
-  spec.watchos.source_files =
+    'Sources/Argon2/include/**/*.h',
     'Sources/Argon2/src/ref.c',
     'Sources/Argon2/src/blake2/blamka-round-ref.h'
 
