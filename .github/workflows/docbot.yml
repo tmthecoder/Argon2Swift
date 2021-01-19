@@ -41,6 +41,7 @@ jobs:
           git config user.name  "Docbot"
           git config user.email "docbot@github.com"
           if [ -d Argon2Swift/ ]; then rm -Rf Argon2Swift/; fi
+          mkdir Argon2Swift
           cp -R ../doc/ Argon2Swift/
           git remote add secure-origin https://${{ secrets.ACCESS_TOKEN }}@github.com/tmthecoder/docs
           git add .
