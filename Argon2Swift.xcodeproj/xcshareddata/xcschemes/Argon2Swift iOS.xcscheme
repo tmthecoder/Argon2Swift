@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A4D942F325B5523100DB4538"
+               BlueprintIdentifier = "A460114125B285C1004F9B26"
                BuildableName = "Argon2Swift.framework"
-               BlueprintName = "Argon2Swift"
+               BlueprintName = "Argon2Swift iOS"
                ReferencedContainer = "container:Argon2Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -74,9 +74,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A4D942F325B5523100DB4538"
+            BlueprintIdentifier = "A460114125B285C1004F9B26"
             BuildableName = "Argon2Swift.framework"
-            BlueprintName = "Argon2Swift"
+            BlueprintName = "Argon2Swift iOS"
             ReferencedContainer = "container:Argon2Swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

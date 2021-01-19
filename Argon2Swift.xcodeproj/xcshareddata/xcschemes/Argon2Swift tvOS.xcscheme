@@ -14,23 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A4D942F325B5523100DB4538"
+               BlueprintIdentifier = "A460115025B28625004F9B26"
                BuildableName = "Argon2Swift.framework"
-               BlueprintName = "Argon2Swift"
-               ReferencedContainer = "container:Argon2Swift.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A40835B125B66E7F00DD13D4"
-               BuildableName = "Argon2SwiftTests.xctest"
-               BlueprintName = "Argon2SwiftTests"
+               BlueprintName = "Argon2Swift tvOS"
                ReferencedContainer = "container:Argon2Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -42,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A40835B125B66E7F00DD13D4"
-               BuildableName = "Argon2SwiftTests.xctest"
-               BlueprintName = "Argon2SwiftTests"
-               ReferencedContainer = "container:Argon2Swift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -74,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A4D942F325B5523100DB4538"
+            BlueprintIdentifier = "A460115025B28625004F9B26"
             BuildableName = "Argon2Swift.framework"
-            BlueprintName = "Argon2Swift"
+            BlueprintName = "Argon2Swift tvOS"
             ReferencedContainer = "container:Argon2Swift.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
