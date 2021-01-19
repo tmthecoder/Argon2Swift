@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A40835C625B66E9300DD13D4 /* Argon2SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9435725B5576600DB4538 /* Argon2SwiftTests.swift */; };
+		A408365425B6736800DD13D4 /* Argon2Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D942F425B5523100DB4538 /* Argon2Swift.framework */; };
 		A460116425B2867A004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A460118825B286F0004F9B26 /* Argon2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2Swift.swift */; };
 		A460118925B286F0004F9B26 /* Argon2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2Swift.swift */; };
@@ -345,6 +346,16 @@
 		A4D9435025B553B900DB4538 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E325B29609004F9B26 /* blake2b.c */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A408365525B6736D00DD13D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A460113725B28539004F9B26 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4D942F325B5523100DB4538;
+			remoteInfo = Argon2Swift;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		A40835B225B66E7F00DD13D4 /* Argon2SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Argon2SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A460114225B285C1004F9B26 /* Argon2Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Argon2Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -446,6 +457,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A408365425B6736800DD13D4 /* Argon2Swift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,12 +499,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A408365325B6736800DD13D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A460113625B28539004F9B26 = {
 			isa = PBXGroup;
 			children = (
 				A4D9435625B556DC00DB4538 /* Tests */,
 				A460117C25B286CA004F9B26 /* Sources */,
 				A460114325B285C1004F9B26 /* Products */,
+				A408365325B6736800DD13D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -839,9 +859,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D9432A25B5539500DB4538 /* Argon2Swift.h in Headers */,
 				A4D9434525B553B300DB4538 /* core.h in Headers */,
 				A487E67825B60CDC002A04C5 /* argon2.h in Headers */,
-				A4D9432A25B5539500DB4538 /* Argon2Swift.h in Headers */,
 				A4D9434025B553B300DB4538 /* encoding.h in Headers */,
 				A4D9434F25B553B900DB4538 /* blake2-impl.h in Headers */,
 				A4D9434225B553B300DB4538 /* thread.h in Headers */,
@@ -864,6 +884,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A408365625B6736D00DD13D4 /* PBXTargetDependency */,
 			);
 			name = Argon2SwiftTests;
 			productName = Argon2SwiftTests;
@@ -1399,6 +1420,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A408365625B6736D00DD13D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4D942F325B5523100DB4538 /* Argon2Swift */;
+			targetProxy = A408365525B6736D00DD13D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A40835B725B66E7F00DD13D4 /* Debug */ = {
