@@ -1,0 +1,11 @@
+framework module Argon2Swift {
+  umbrella header "Argon2Swift.h"
+
+  export *
+  module * { export * }
+}
+
+module Argon2Swift.Swift {
+    header "Argon2Swift-Swift.h"
+    requires objc
+}
