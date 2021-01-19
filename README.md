@@ -1,4 +1,6 @@
 ## Argon2Swift
+![Argon2Swift](https://github.com/tmthecoder/Argon2Swift/workflows/Argon2Swift/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Swift bindings for the reference C implementation of [Argon2], the winner of the [Password Hash Competition].
 
