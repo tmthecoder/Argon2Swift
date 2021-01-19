@@ -20,20 +20,6 @@
                ReferencedContainer = "container:Argon2Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A40835B125B66E7F00DD13D4"
-               BuildableName = "Argon2SwiftTests.xctest"
-               BlueprintName = "Argon2SwiftTests"
-               ReferencedContainer = "container:Argon2Swift.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -42,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A40835B125B66E7F00DD13D4"
-               BuildableName = "Argon2SwiftTests.xctest"
-               BlueprintName = "Argon2SwiftTests"
-               ReferencedContainer = "container:Argon2Swift.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
