@@ -68,7 +68,7 @@ Pod::Spec.new do |spec|
   spec.tvos.deployment_target = "9.0"
 
   spec.preserve_paths = 'Sources/Argon2', 'Sources/Argon2/include/**/*.h'
-
+  spec.header_mappings_dir = 'Sources/Argon2/include'
   spec.requires_arc = true
 
   spec.source_files =
