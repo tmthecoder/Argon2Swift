@@ -22,60 +22,64 @@
 		A408376425B6768A00DD13D4 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
 		A408376B25B6769000DD13D4 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E325B29609004F9B26 /* blake2b.c */; };
 		A408377225B6769800DD13D4 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E525B29609004F9B26 /* ref.c */; };
-		A408377925B676A400DD13D4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; };
-		A408378025B676CF00DD13D4 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; };
-		A408378725B676D400DD13D4 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; };
-		A408378E25B676DA00DD13D4 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; };
-		A408379525B676E100DD13D4 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; };
-		A408379C25B676E700DD13D4 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; };
+		A408377925B676A400DD13D4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A408378025B676CF00DD13D4 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A408378725B676D400DD13D4 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A408378E25B676DA00DD13D4 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A408379525B676E100DD13D4 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A408379C25B676E700DD13D4 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A40837AF25B6774400DD13D4 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014ED25B29609004F9B26 /* argon2.c */; };
 		A40837B025B6774400DD13D4 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E825B29609004F9B26 /* core.c */; };
 		A40837B125B6774400DD13D4 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DD25B29609004F9B26 /* thread.c */; };
 		A40837B225B6774400DD13D4 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
 		A40837B325B6774400DD13D4 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E525B29609004F9B26 /* ref.c */; };
 		A40837B425B6774400DD13D4 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E325B29609004F9B26 /* blake2b.c */; };
-		A40837BB25B6776600DD13D4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; };
-		A40837BC25B6776600DD13D4 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; };
-		A40837BD25B6776600DD13D4 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; };
-		A40837BE25B6776600DD13D4 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; };
-		A40837BF25B6776700DD13D4 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; };
-		A40837C025B6776700DD13D4 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; };
-		A40837D325B6778500DD13D4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; };
-		A40837D425B6778500DD13D4 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; };
-		A40837D525B6778500DD13D4 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; };
-		A40837D625B6778500DD13D4 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; };
-		A40837D725B6778500DD13D4 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; };
-		A40837D825B6778500DD13D4 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; };
+		A40837BB25B6776600DD13D4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837BC25B6776600DD13D4 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837BD25B6776600DD13D4 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837BE25B6776600DD13D4 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837BF25B6776700DD13D4 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837C025B6776700DD13D4 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837D325B6778500DD13D4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837D425B6778500DD13D4 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837D525B6778500DD13D4 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837D625B6778500DD13D4 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837D725B6778500DD13D4 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837D825B6778500DD13D4 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A40837DF25B677B600DD13D4 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014ED25B29609004F9B26 /* argon2.c */; };
 		A40837E025B677B700DD13D4 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E825B29609004F9B26 /* core.c */; };
 		A40837E125B677B700DD13D4 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DD25B29609004F9B26 /* thread.c */; };
 		A40837E225B677B700DD13D4 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
 		A40837E325B677B700DD13D4 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E525B29609004F9B26 /* ref.c */; };
 		A40837E425B677B700DD13D4 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E325B29609004F9B26 /* blake2b.c */; };
-		A40837EB25B677D000DD13D4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; };
-		A40837EC25B677D000DD13D4 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; };
-		A40837ED25B677D000DD13D4 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; };
-		A40837EE25B677D000DD13D4 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; };
-		A40837EF25B677D100DD13D4 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; };
-		A40837F025B677D100DD13D4 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; };
+		A40837EB25B677D000DD13D4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837EC25B677D000DD13D4 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837ED25B677D000DD13D4 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837EE25B677D000DD13D4 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837EF25B677D100DD13D4 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A40837F025B677D100DD13D4 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A40837F725B677DC00DD13D4 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014ED25B29609004F9B26 /* argon2.c */; };
 		A40837F825B677DC00DD13D4 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E825B29609004F9B26 /* core.c */; };
 		A40837F925B677DC00DD13D4 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DD25B29609004F9B26 /* thread.c */; };
 		A40837FA25B677DC00DD13D4 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
 		A40837FB25B677DC00DD13D4 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E525B29609004F9B26 /* ref.c */; };
 		A40837FC25B677DC00DD13D4 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E325B29609004F9B26 /* blake2b.c */; };
-		A408380F25B677F500DD13D4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; };
-		A408381025B677F500DD13D4 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; };
-		A408381125B677F500DD13D4 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; };
-		A408381225B677F500DD13D4 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; };
-		A408381325B677F600DD13D4 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; };
-		A408381425B677F600DD13D4 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; };
+		A408380F25B677F500DD13D4 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014DE25B29609004F9B26 /* core.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A408381025B677F500DD13D4 /* thread.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E925B29609004F9B26 /* thread.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A408381125B677F500DD13D4 /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E725B29609004F9B26 /* encoding.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A408381225B677F500DD13D4 /* blamka-round-ref.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E025B29609004F9B26 /* blamka-round-ref.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A408381325B677F600DD13D4 /* blake2.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E225B29609004F9B26 /* blake2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A408381425B677F600DD13D4 /* blake2-impl.h in Headers */ = {isa = PBXBuildFile; fileRef = A46014E425B29609004F9B26 /* blake2-impl.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A408381B25B677FF00DD13D4 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014ED25B29609004F9B26 /* argon2.c */; };
 		A408381C25B677FF00DD13D4 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E825B29609004F9B26 /* core.c */; };
 		A408381D25B677FF00DD13D4 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014DD25B29609004F9B26 /* thread.c */; };
 		A408381E25B677FF00DD13D4 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014EE25B29609004F9B26 /* encoding.c */; };
 		A408381F25B677FF00DD13D4 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E525B29609004F9B26 /* ref.c */; };
 		A408382025B677FF00DD13D4 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = A46014E325B29609004F9B26 /* blake2b.c */; };
+		A44E6B2725EC0ED100137A6F /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A44E6B2E25EC0EE600137A6F /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A44E6B3525EC0F0E00137A6F /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A44E6B3C25EC0F0F00137A6F /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A460116425B2867A004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A460118825B286F0004F9B26 /* Argon2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2Swift.swift */; };
 		A460118925B286F0004F9B26 /* Argon2Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460118725B286F0004F9B26 /* Argon2Swift.swift */; };
@@ -84,8 +88,7 @@
 		A460119825B2895B004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46011A125B2896B004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46011AE25B28972004F9B26 /* Argon2Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = A460116225B2867A004F9B26 /* Argon2Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A460152425B29609004F9B26 /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A460152525B29609004F9B26 /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A460152425B29609004F9B26 /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		A460165E25B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460165D25B298A7004F9B26 /* Argon2SwiftResult.swift */; };
 		A460165F25B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460165D25B298A7004F9B26 /* Argon2SwiftResult.swift */; };
 		A460166025B298A7004F9B26 /* Argon2SwiftResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460165D25B298A7004F9B26 /* Argon2SwiftResult.swift */; };
@@ -98,9 +101,6 @@
 		A460167125B2995F004F9B26 /* Argon2Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166F25B2995F004F9B26 /* Argon2Type.swift */; };
 		A460167225B2995F004F9B26 /* Argon2Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166F25B2995F004F9B26 /* Argon2Type.swift */; };
 		A460167325B2995F004F9B26 /* Argon2Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A460166F25B2995F004F9B26 /* Argon2Type.swift */; };
-		A487E67825B60CDC002A04C5 /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A487E68525B60CDD002A04C5 /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A487E69925B60CDE002A04C5 /* argon2.h in Headers */ = {isa = PBXBuildFile; fileRef = A460149E25B29609004F9B26 /* argon2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A4D9429825B54BC200DB4538 /* Argon2Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9429425B54BC200DB4538 /* Argon2Version.swift */; };
 		A4D9429925B54BC200DB4538 /* Argon2Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9429425B54BC200DB4538 /* Argon2Version.swift */; };
 		A4D9429A25B54BC200DB4538 /* Argon2Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4D9429425B54BC200DB4538 /* Argon2Version.swift */; };
@@ -128,6 +128,7 @@
 
 /* Begin PBXFileReference section */
 		A40835B225B66E7F00DD13D4 /* Argon2SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Argon2SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A44E6AFC25EC0B8700137A6F /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		A460114225B285C1004F9B26 /* Argon2Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Argon2Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A460115125B28625004F9B26 /* Argon2Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Argon2Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A460116025B2867A004F9B26 /* Argon2Swift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Argon2Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -302,6 +303,7 @@
 		A460117C25B286CA004F9B26 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A44E6AFC25EC0B8700137A6F /* module.modulemap */,
 				A4D9430D25B5531600DB4538 /* Info.plist */,
 				A460165C25B29897004F9B26 /* Swift */,
 				A460148C25B29608004F9B26 /* Argon2 */,
@@ -583,7 +585,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A46011A125B2896B004F9B26 /* Argon2Swift.h in Headers */,
-				A460152525B29609004F9B26 /* argon2.h in Headers */,
+				A44E6B2E25EC0EE600137A6F /* argon2.h in Headers */,
 				A40837BB25B6776600DD13D4 /* core.h in Headers */,
 				A40837BC25B6776600DD13D4 /* thread.h in Headers */,
 				A40837BD25B6776600DD13D4 /* encoding.h in Headers */,
@@ -598,13 +600,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A460116425B2867A004F9B26 /* Argon2Swift.h in Headers */,
-				A487E69925B60CDE002A04C5 /* argon2.h in Headers */,
 				A40837D325B6778500DD13D4 /* core.h in Headers */,
 				A40837D425B6778500DD13D4 /* thread.h in Headers */,
 				A40837D525B6778500DD13D4 /* encoding.h in Headers */,
 				A40837D625B6778500DD13D4 /* blamka-round-ref.h in Headers */,
 				A40837D725B6778500DD13D4 /* blake2.h in Headers */,
 				A40837D825B6778500DD13D4 /* blake2-impl.h in Headers */,
+				A44E6B3525EC0F0E00137A6F /* argon2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,13 +615,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A460119825B2895B004F9B26 /* Argon2Swift.h in Headers */,
-				A487E68525B60CDD002A04C5 /* argon2.h in Headers */,
 				A40837EB25B677D000DD13D4 /* core.h in Headers */,
 				A40837EC25B677D000DD13D4 /* thread.h in Headers */,
 				A40837ED25B677D000DD13D4 /* encoding.h in Headers */,
 				A40837EE25B677D000DD13D4 /* blamka-round-ref.h in Headers */,
 				A40837EF25B677D100DD13D4 /* blake2.h in Headers */,
 				A40837F025B677D100DD13D4 /* blake2-impl.h in Headers */,
+				A44E6B3C25EC0F0F00137A6F /* argon2.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +630,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4D9432A25B5539500DB4538 /* Argon2Swift.h in Headers */,
-				A487E67825B60CDC002A04C5 /* argon2.h in Headers */,
+				A44E6B2725EC0ED100137A6F /* argon2.h in Headers */,
 				A408380F25B677F500DD13D4 /* core.h in Headers */,
 				A408381025B677F500DD13D4 /* thread.h in Headers */,
 				A408381125B677F500DD13D4 /* encoding.h in Headers */,
@@ -1064,7 +1066,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				HEADER_SEARCH_PATHS = Sources/Argon2/include/;
+				HEADER_SEARCH_PATHS = Sources/;
 				INFOPLIST_FILE = Sources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
@@ -1079,7 +1081,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				HEADER_SEARCH_PATHS = Sources/Argon2/include/;
+				HEADER_SEARCH_PATHS = Sources/;
 				INFOPLIST_FILE = Sources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";

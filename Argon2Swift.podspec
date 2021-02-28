@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name             = "Argon2Swift"
-  spec.version          = "1.0.0"
+  spec.version          = "1.0.1"
   spec.summary          = "A Swift wrapper around the Argon2 reference implementation."
   spec.swift_version = "5.0"
 
@@ -67,8 +67,8 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target = "2.0"
   spec.tvos.deployment_target = "9.0"
 
-  spec.preserve_paths = 'Sources/Argon2', 'Sources/Argon2/include/**/*.h'
-  spec.header_mappings_dir = 'Sources/Argon2/include'
+  spec.preserve_paths = 'Sources/', 'Sources/Argon2', 'Sources/Argon2/include/**/*.h'
+  # spec.header_mappings_dir = 'Sources/Argon2/include'
   spec.requires_arc = true
 
   spec.source_files =
@@ -84,7 +84,22 @@ Pod::Spec.new do |spec|
     'Sources/Argon2/src/ref.c',
     'Sources/Argon2/src/blake2/blamka-round-ref.h'
 
-  spec.public_header_files = 'Sources/Argon2/include/**/*.h'
+  # spec.public_header_files = 'Sources/Argon2/include/**/*.h'
+
+  spec.private_header_files =
+    'Sources/Argon2/include/argon2.h',
+    'Sources/Argon2/src/core.h',
+    'Sources/Argon2/src/thread.h',
+    'Sources/Argon2/src/encoding.h',
+    'Sources/Argon2/src/blamka-round-ref.h',
+    'Sources/Argon2/src/blake2.h',
+    'Sources/Argon2/src/blake2-impl.h'
+
+  spec.pod_target_xcconfig = {
+    'DEFINES_MODULE' => 'YES',
+    'SWIFT_INCLUDE_PATHS[sdk=*]' => '$(PODS_TARGET_SRCROOT)/Sources $(PODS_TARGET_SRCROOT)/Sources/Argon2 $(PODS_TARGET_SRCROOT)/Sources/Argon2/include',
+    'HEADER_SEARCH_PATHS[sdk=*]' => '$(PODS_TARGET_SRCROOT)/Sources'
+  }
 
   spec.test_spec 'Tests' do |test_spec|
     test_spec.source_files = 'Tests/**/*.swift'

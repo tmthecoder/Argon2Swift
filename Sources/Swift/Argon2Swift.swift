@@ -5,6 +5,7 @@
 
 
 import Foundation
+import Argon2
 
 /// Main class to handle all Argon2 hashing and verification
 /// ### Usage Example ###
