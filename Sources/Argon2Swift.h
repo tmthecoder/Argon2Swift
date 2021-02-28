@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import <Argon2Swift/argon2.h>
+#import <Argon2Swift/Argon2Swift.h>
 
 //! Project version number for Argon2Swift_macOS.
 FOUNDATION_EXPORT double Argon2SwiftVersionNumber;

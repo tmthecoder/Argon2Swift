@@ -67,7 +67,7 @@ Pod::Spec.new do |spec|
   spec.watchos.deployment_target = "2.0"
   spec.tvos.deployment_target = "9.0"
 
-  spec.preserve_paths = 'Sources/', 'Sources/Argon2', 'Sources/Argon2/include/**/*.h'
+  spec.preserve_paths = 'Sources/Modules', 'Sources/Argon2', 'Sources/Argon2/include/**/*.h'
   # spec.header_mappings_dir = 'Sources/Argon2/include'
   spec.requires_arc = true
 
@@ -98,8 +98,8 @@ Pod::Spec.new do |spec|
 
   spec.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
-    'SWIFT_INCLUDE_PATHS[sdk=*]' => '$(PODS_TARGET_SRCROOT)/Sources $(PODS_TARGET_SRCROOT)/Sources/Argon2 $(PODS_TARGET_SRCROOT)/Sources/Argon2/include',
-    'HEADER_SEARCH_PATHS[sdk=*]' => '$(PODS_TARGET_SRCROOT)/Sources'
+    'SWIFT_INCLUDE_PATHS[sdk=*]' => '$(PODS_TARGET_SRCROOT)/Sources/Modules $(PODS_TARGET_SRCROOT)/Sources/Argon2 $(PODS_TARGET_SRCROOT)/Sources/Argon2/include',
+    'HEADER_SEARCH_PATHS[sdk=*]' => '$(PODS_TARGET_SRCROOT)/Sources/Modules'
   }
 
   spec.test_spec 'Tests' do |test_spec|

@@ -277,6 +277,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A44E6ECD25EC1E9A00137A6F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A44E6AFC25EC0B8700137A6F /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
 		A460113625B28539004F9B26 = {
 			isa = PBXGroup;
 			children = (
@@ -303,7 +311,7 @@
 		A460117C25B286CA004F9B26 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				A44E6AFC25EC0B8700137A6F /* module.modulemap */,
+				A44E6ECD25EC1E9A00137A6F /* Modules */,
 				A4D9430D25B5531600DB4538 /* Info.plist */,
 				A460165C25B29897004F9B26 /* Swift */,
 				A460148C25B29608004F9B26 /* Argon2 */,
@@ -1066,7 +1074,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				HEADER_SEARCH_PATHS = Sources/;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Sources/Modules";
 				INFOPLIST_FILE = Sources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
@@ -1081,7 +1089,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
-				HEADER_SEARCH_PATHS = Sources/;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Sources/Modules";
 				INFOPLIST_FILE = Sources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LIBRARY_SEARCH_PATHS = "";
