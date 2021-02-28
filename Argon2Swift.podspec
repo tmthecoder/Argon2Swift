@@ -71,8 +71,18 @@ Pod::Spec.new do |spec|
   # spec.header_mappings_dir = 'Sources/Argon2/include'
   spec.requires_arc = true
 
+  spec.private_header_files =
+    'Sources/Argon2/include/argon2.h',
+    'Sources/Argon2/src/core.h',
+    'Sources/Argon2/src/thread.h',
+    'Sources/Argon2/src/encoding.h',
+    'Sources/Argon2/src/blamka-round-ref.h',
+    'Sources/Argon2/src/blake2.h',
+    'Sources/Argon2/src/blake2-impl.h'
+
   spec.source_files =
     'Sources/**/*.swift',
+    'Sources/Argon2Swift.h',
     'Sources/Argon2/src/argon2.c',
     'Sources/Argon2/src/core.{c,h}',
     'Sources/Argon2/src/thread.{c,h}',
@@ -84,16 +94,7 @@ Pod::Spec.new do |spec|
     'Sources/Argon2/src/ref.c',
     'Sources/Argon2/src/blake2/blamka-round-ref.h'
 
-  # spec.public_header_files = 'Sources/Argon2/include/**/*.h'
-
-  spec.private_header_files =
-    'Sources/Argon2/include/argon2.h',
-    'Sources/Argon2/src/core.h',
-    'Sources/Argon2/src/thread.h',
-    'Sources/Argon2/src/encoding.h',
-    'Sources/Argon2/src/blamka-round-ref.h',
-    'Sources/Argon2/src/blake2.h',
-    'Sources/Argon2/src/blake2-impl.h'
+  spec.public_header_files = 'Sources/Argon2Swift.h'
 
   spec.pod_target_xcconfig = {
     'DEFINES_MODULE' => 'YES',
