@@ -74,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A44E74FC25EC69C900137A6F /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		"Argon2Swift::Argon2::Product" /* Argon2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Argon2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Argon2Swift::Argon2Swift::Product" /* Argon2Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Argon2Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Argon2Swift::Argon2SwiftTests::Product" /* Argon2SwiftTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = Argon2SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +86,6 @@
 		OBJ_18 /* ref.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ref.c; sourceTree = "<group>"; };
 		OBJ_21 /* thread.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = thread.c; sourceTree = "<group>"; };
 		OBJ_23 /* argon2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = argon2.h; sourceTree = "<group>"; };
-		OBJ_24 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/tejasmehta/Desktop/Development/Frameworks/Argon2Swift/Argon2Swift.xcodeproj/GeneratedModuleMap/Argon2/module.modulemap; sourceTree = "<group>"; };
 		OBJ_26 /* Argon2Swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argon2Swift.swift; sourceTree = "<group>"; };
 		OBJ_27 /* Argon2SwiftErrorCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argon2SwiftErrorCode.swift; sourceTree = "<group>"; };
 		OBJ_28 /* Argon2SwiftException.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argon2SwiftException.swift; sourceTree = "<group>"; };
@@ -125,6 +125,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A44E74FB25EC69C900137A6F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A44E74FC25EC69C900137A6F /* module.modulemap */,
+			);
+			name = Modules;
+			path = Sources/Modules;
+			sourceTree = "<group>";
+		};
 		OBJ_12 /* blake2 */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_23 /* argon2.h */,
-				OBJ_24 /* module.modulemap */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 		OBJ_7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A44E74FB25EC69C900137A6F /* Modules */,
 				OBJ_8 /* Argon2 */,
 				OBJ_25 /* Argon2Swift */,
 			);
@@ -403,6 +412,7 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Sources/Modules";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
@@ -428,6 +438,7 @@
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/Sources/Modules";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -8,12 +8,20 @@ Swift bindings for the reference C implementation of [Argon2], the winner of the
 
 [Password Hash Competition]: https://password-hashing.net
 
-## Installation
+## Installation (Cocoapods)
 
-Argon2Swift can be installed via Cocoapods by adding the following to your Podfile:
+Argon2Swift can be installed via Cocoapods by adding the following to your `Podfile`:
 
 ```
 pod Argon2Swift
+```
+
+## Installation (SPM)
+
+Argon2Swift can be installed via SPM (Swift Package Mangeer) by adding the following to your depencencies:
+
+```swift
+.package(url: "https://github.com/tmthecoder/Argon2Swift.git", .branch("main"))
 ```
 
 ## Usage
