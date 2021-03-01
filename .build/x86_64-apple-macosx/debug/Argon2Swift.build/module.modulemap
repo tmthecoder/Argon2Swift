@@ -1,0 +1,4 @@
+module Argon2Swift {
+    header "/Users/tejasmehta/Desktop/Development/Frameworks/Argon2Swift/.build/x86_64-apple-macosx/debug/Argon2Swift.build/Argon2Swift-Swift.h"
+    requires objc
+}
