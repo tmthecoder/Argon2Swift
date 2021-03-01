@@ -1,4 +1,0 @@
-module Argon2 {
-    umbrella header "/Users/tejasmehta/Desktop/Development/Frameworks/Argon2Swift/Sources/Argon2/include/Argon2.h"
-    export *
-}
