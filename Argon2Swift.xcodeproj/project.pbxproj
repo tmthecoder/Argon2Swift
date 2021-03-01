@@ -22,7 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		OBJ_44 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* argon2.c */; };
-		OBJ_45 /* bench.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* bench.c */; };
 		OBJ_46 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* blake2b.c */; };
 		OBJ_47 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* core.c */; };
 		OBJ_48 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* encoding.c */; };
@@ -79,7 +78,6 @@
 		"Argon2Swift::Argon2Swift::Product" /* Argon2Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Argon2Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Argon2Swift::Argon2SwiftTests::Product" /* Argon2SwiftTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = Argon2SwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_10 /* argon2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = argon2.c; sourceTree = "<group>"; };
-		OBJ_11 /* bench.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = bench.c; sourceTree = "<group>"; };
 		OBJ_13 /* blake2b.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = blake2b.c; sourceTree = "<group>"; };
 		OBJ_14 /* core.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
 		OBJ_15 /* encoding.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = encoding.c; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_10 /* argon2.c */,
-				OBJ_11 /* bench.c */,
 				OBJ_12 /* blake2 */,
 				OBJ_14 /* core.c */,
 				OBJ_15 /* encoding.c */,
@@ -332,7 +329,6 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_44 /* argon2.c in Sources */,
-				OBJ_45 /* bench.c in Sources */,
 				OBJ_46 /* blake2b.c in Sources */,
 				OBJ_47 /* core.c in Sources */,
 				OBJ_48 /* encoding.c in Sources */,
