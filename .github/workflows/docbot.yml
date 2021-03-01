@@ -32,12 +32,12 @@ jobs:
       # Generate Docs
       - name: Generate Docs
         run: |
-          rm -rf Sources/Argon2/src/opt.c
-          rm -rf Sources/Argon2/src/bench.c
-          rm -rf Sources/Argon2/src/genkat.c
-          rm -rf Sources/Argon2/src/run.c
-          rm -rf Sources/Argon2/src/test.c
           jazzy --min-acl internal --no-hide-documentation-coverage --theme fullwidth --output ./docs --documentation=./*.md
+#          rm -rf Sources/Argon2/src/opt.c
+#          rm -rf Sources/Argon2/src/bench.c
+#          rm -rf Sources/Argon2/src/genkat.c
+#          rm -rf Sources/Argon2/src/run.c
+#          rm -rf Sources/Argon2/src/test.c
   
       - name: Push Documentation
         run: |
