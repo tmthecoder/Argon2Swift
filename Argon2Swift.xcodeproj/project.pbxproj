@@ -21,9 +21,9 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		A44E754B25EC75ED00137A6F /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* core.c */; };
 		OBJ_44 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* argon2.c */; };
 		OBJ_46 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* blake2b.c */; };
-		OBJ_47 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* core.c */; };
 		OBJ_48 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* encoding.c */; };
 		OBJ_51 /* ref.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ref.c */; };
 		OBJ_54 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* thread.c */; };
@@ -181,7 +181,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -189,7 +189,6 @@
 				OBJ_33 /* Tests */,
 				OBJ_35 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -309,7 +308,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -330,7 +329,7 @@
 			files = (
 				OBJ_44 /* argon2.c in Sources */,
 				OBJ_46 /* blake2b.c in Sources */,
-				OBJ_47 /* core.c in Sources */,
+				A44E754B25EC75ED00137A6F /* core.c in Sources */,
 				OBJ_48 /* encoding.c in Sources */,
 				OBJ_51 /* ref.c in Sources */,
 				OBJ_54 /* thread.c in Sources */,
