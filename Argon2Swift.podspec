@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.name             = "Argon2Swift"
   spec.version          = "1.0.1"
   spec.summary          = "A Swift wrapper around the Argon2 reference implementation."
-  spec.swift_version = "5.0"
+  spec.swift_version    = "5.0"
 
   spec.description      = <<-DESC
     A Swift wrapper around the Argon2 Reference implementation, built for simplicity and ease
@@ -46,7 +46,7 @@ Pod::Spec.new do |spec|
   #  profile URL.
   #
 
-  spec.author             = { "Tejas Mehta" => "tmthecoder@gmail.com" }
+  spec.author           = { "Tejas Mehta" => "tmthecoder@gmail.com" }
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
