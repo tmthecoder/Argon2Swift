@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         // Dependencies declare other packages that this package depends on.
         .package(
-            name: "Argon2", 
+            name: "argon2", 
             url: "https://github.com/P-H-C/phc-winner-argon2.git", .branch("master")
         )
     ],
@@ -24,7 +24,7 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "Argon2Swift",
-            dependencies: ["Argon2"],
+            dependencies: ["argon2"],
             path: "Sources/Swift"),
         .testTarget(
             name: "Argon2SwiftTests",
