@@ -68,6 +68,12 @@ public class Argon2Swift {
         // Allocate a pointer for the hash and the encoded hash
         let hash = setPtr(length: length)
         let encoded = setPtr(length: encodedLen)
+        
+        // Free the previously created pointers when the program is out of scope
+        defer {
+            freePtr(pointer: hash, length: length)
+            freePtr(pointer: encoded, length: encodedLen)
+        }
 
         // Perform the actual hash operation
         let errorCode = argon2_hash(UInt32(iterations), UInt32(memory), UInt32(parallelism), [UInt8](password), password.count, [UInt8](salt.bytes), salt.bytes.count, hash, length, encoded, encodedLen, getArgon2Type(type: type), UInt32(version.rawValue))
@@ -84,10 +90,6 @@ public class Argon2Swift {
         
         // Create an instance of Argon2SwiftResult with the arrays
         let result = Argon2SwiftResult(hashBytes: hashArray, encodedBytes: encodedArray)
-        
-        // Free the previously created pointers
-        freePtr(pointer: hash, length: length)
-        freePtr(pointer: encoded, length: encodedLen)
         
         // Return the result from above
         return result
