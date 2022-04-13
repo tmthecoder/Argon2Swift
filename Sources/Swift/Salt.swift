@@ -5,7 +5,6 @@
 
 
 import Foundation
-import Security
 
 /// A class to wrap around Salts in argon2. allowing cryptographically secure generation of salts as well as utilization of premade salts
 public class Salt {
@@ -30,15 +29,7 @@ public class Salt {
      - Returns: A `Salt` object containing a random byte array of the specified length
      */
     public static func newSalt(length: Int = 16) -> Salt {
-        // Set a byte array
-        var bytes = [UInt8](repeating: 0, count: length)
-        // Set random generated numbers to the byte array
-        let status = SecRandomCopyBytes(kSecRandomDefault, bytes.count, &bytes)
-        // Ensure the copy was a success
-        if status != errSecSuccess {
-            fatalError("SecRandomCopyBytes failed with error code: \(status)")
-        }
-        // Return the salt
+        let bytes = Array((0..<length).map { _ in UInt8.random(in: 0...255) })
         return Salt(bytes: Data(bytes))
     }
 }
