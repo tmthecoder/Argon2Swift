@@ -19,7 +19,7 @@ pod Argon2Swift
 
 ## Installation (SPM)
 
-Argon2Swift can be installed via SPM (Swift Package Mangeer) by adding the following to your depencencies:
+Argon2Swift can be installed via SPM (Swift Package Manger) by adding the following to your depencencies:
 
 ```swift
 .package(url: "https://github.com/tmthecoder/Argon2Swift.git", .branch("main"))
