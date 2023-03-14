@@ -10,7 +10,7 @@ import Foundation
 public class Salt {
     
     /// The byte-array that the salt class wraps around
-    let bytes: Data
+    public let bytes: Data
     
     /**
      Initializes a new `Salt` object with the provided byte array
