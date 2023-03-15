@@ -81,7 +81,7 @@ Pod::Spec.new do |spec|
     'Sources/Argon2/src/blake2-impl.h'
 
   spec.source_files =
-    'Sources/**/*.swift',
+    'Sources/Swift/*.swift',
     'Sources/Argon2Swift.h',
     'Sources/Argon2/src/argon2.c',
     'Sources/Argon2/src/core.{c,h}',

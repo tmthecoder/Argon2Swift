@@ -22,6 +22,7 @@
 
 /* Begin PBXBuildFile section */
 		A44E754B25EC75ED00137A6F /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* core.c */; };
+		A47CA85929C0F79B00871A20 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_44 /* argon2.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* argon2.c */; };
 		OBJ_46 /* blake2b.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* blake2b.c */; };
 		OBJ_48 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* encoding.c */; };
@@ -35,7 +36,6 @@
 		OBJ_66 /* Argon2Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* Argon2Version.swift */; };
 		OBJ_67 /* Salt.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* Salt.swift */; };
 		OBJ_69 /* Argon2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Argon2Swift::Argon2::Product" /* Argon2.framework */; };
-		OBJ_76 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_87 /* Argon2SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Argon2SwiftTests.swift */; };
 		OBJ_89 /* Argon2Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Argon2Swift::Argon2Swift::Product" /* Argon2Swift.framework */; };
 		OBJ_90 /* Argon2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Argon2Swift::Argon2::Product" /* Argon2.framework */; };
@@ -92,7 +92,7 @@
 		OBJ_31 /* Argon2Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argon2Version.swift; sourceTree = "<group>"; };
 		OBJ_32 /* Salt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Salt.swift; sourceTree = "<group>"; };
 		OBJ_34 /* Argon2SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Argon2SwiftTests.swift; sourceTree = "<group>"; };
-		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,7 +354,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_76 /* Package.swift in Sources */,
+				A47CA85929C0F79B00871A20 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
